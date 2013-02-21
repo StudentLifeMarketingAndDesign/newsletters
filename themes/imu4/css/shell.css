@@ -1,0 +1,157 @@
+
+/* main header used only to center content */
+
+#real_content {width:800px; height:800px; margin:0 auto; text-align:left;}
+	
+/* where actual content is placed */
+	
+	#Content {width:800px; height:800px; margin:0 auto; text-align:left; background-color:#fff;}
+	#Content td.main {width:740px; height:900px; margin:0px auto; padding:0px; background-color:#fff}
+	#Content table.header_image {background-image:url(http://www.hawkshop.com/webitemimages/103/main/hawkshop_banner.gif); background-repeat:no-repeat; height:115px; width:810px; background-color:#fff;}
+	#Content #top_nav_bar {background-color:#ffcd05;}
+		#Content #top_nav_bar td {width:800px;}
+
+
+/* Top Navigation and Search Bar */
+
+	#top_nav_bar #breadcrumbs {
+		font-size:10px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; 
+		margin: 0px; 
+		padding: 7px 0px 10px 2px; 
+		_padding:10px 0px 10px 2px; 
+		width:289px; 
+		float:left; 
+		font-weight:normal; 
+		color:#4a4a4a;
+		vertical-align: middle;
+		}
+		#top_nav_bar #breadcrumbs a:link {font-size:9px; font-family:Arial, Helvetica, sans-serif; color:#4a4a4a; text-decoration:none; padding-right:1px; width:auto; display:inline; font-weight:bold;}
+		#top_nav_bar #breadcrumbs a:visited {font-size:9px; font-family:Arial, Helvetica, sans-serif; color:#4a4a4a; text-decoration:none; padding-right:1px; width:auto; display:inline;font-weight:bold;}
+		
+	tr.toprow  { background-image:url(/images/103/hawkeye/topback.gif); background-repeat:repeat-x; background-position:top right;}
+
+	#info_bar {
+		font-size: 10px; 
+		background-color: #ffcd05; 
+		height: auto; 
+		float: right; 
+		margin: 0px; 
+		padding: 7px 3px 10px 2px; 
+		_padding: 10px 3px 10px 2px;
+		display: inline; 
+		vertical-align: middle;
+		}
+		#info_bar a:link {font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:9px;color:#4a4a4a;text-decoration:none;padding:0px;}
+		#info_bar a:hover {font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:9px;color:#4a4a4a;text-decoration:none;padding:0px;}
+		#info_bar a:visited {font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:9px;color:#4a4a4a;text-decoration:none;padding:0px;}
+		#info_bar a:visited:hover {font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:9px;color:#4a4a4a;text-decoration:none;padding:0px;}
+
+	#search_bar {
+		background-color:#ffcd05; 
+		height:auto; 
+		float:right; 
+		margin:0px; 
+		padding: 2px 2px 0px 0px; 
+		_padding: 4px 2px 0px 0px;
+		display:inline; 
+		vertical-align: bottom; 
+		}		
+		#search_bar input { color: #000000; font-size:10px; font-weight: bold; }
+		#search_bar button { color: #ffffff; font-size:10px; font-weight: bold; background-color:#000000; border: 1px solid #ffffff; vertical-align: middle; padding: 2px; margin: 0px 0px 0px 3px;}
+		#search_bar button:hover { color: #ffcd05; }
+		
+		
+/* Left side navigation, positioning and font styles */		
+		
+	td.leftnav { background-image:url(/images/103/hawkeye/left_drop_shadow.jpg); background-repeat:repeat-y; background-position:bottom right; width:146px; height: 100%; background-color:#efefef;}
+		
+	#left_nav {width:146px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; }
+		#left_nav td  {font-size:13px; font-weight:normal; margin:0px; padding:0px;}
+		
+		#left_nav td ul {margin:0px; padding:0px;}
+		#left_nav td ul li{list-style-type:none; margin:0px; padding:0px;}
+		
+		#left_nav td ul a:link {color:#000; display:block; text-decoration:none; width:134px; _width:138px; border-bottom:dotted #CCCCCC 1px; padding:3px 2px 3px 2px;}
+		#left_nav td ul a:hover {background-color:#ffcd05; color:#000; display:block; width:134px; _width:138px; text-decoration:none;}
+		#left_nav td ul a:visited {color:#000; display:block; text-decoration:none; width:134px; _width:138px; border-bottom:dotted #CCCCCC 1px; padding:3px 2px 3px 2px;}
+		#left_nav td ul a:visited:hover {background-color:#ffcd05; color:#000; display:block; width:134px; _width:138px; text-decoration:none;}
+		
+		#left_nav td ul ul {background-image:none; background-color:#ffffff; border-bottom:none; padding: 0px 2px 0px 7px;}
+		#left_nav td ul ul li { border-style:none;}
+		#left_nav td ul ul li {margin:0px 0px 0px 25px; font-size:10px; border:none; margin:0px;}
+		
+		#left_nav td ul ul a.onbranch, #left_nav td ul a.onleaf {font-weight:bold;}
+		#left_nav td ul ul li a:link { background-color:#ffffff; border:none; margin:0px; padding:0px; display:block;}
+		#left_nav td ul ul li a:hover { background-color:#ffffff;}
+		#left_nav td ul ul li a:visited { background-color:#ffffff; border:none; margin:0px; padding:0px;}
+		#left_nav td ul ul li a:visited:hover { background-color:#ffffff;}
+		#left_nav td ul ul li a:link.selected { background-color:#ffffff; border:none; margin:0px; padding:0px; display:block; text-decoration:underline;}
+		#left_nav td ul ul li a:visited.selected { background-color:#ffffff; border:none; margin:0px; padding:0px; text-decoration:underline;}
+
+#left_ads  {width:120px; margin:9px 0px 0px 9px; padding:0px;}
+
+
+/* Right side navigation, positioning and font styles */
+	
+	
+	td.rightnav { width:146px; height: 100%; margin:0px; padding:0px; float:right; background-image:url(/images/103/hawkeye/right_drop_shadow.jpg); background-repeat:repeat-y; background-position:left; background-color:#efefef}	
+	#right_nav {width:146px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; float:right; }
+		#right_nav h1 {font-size:14px; background-color:#4e4b4b; color:#fff; margin:0px; padding:0px; text-align:center; font-weight:normal; width:130px;}	
+		#right_nav h2 {font-size:12px; background-color:#4e4b4b; color:#fff; margin:0px; padding:3px 0px 3px 0px; text-align:center;}
+		
+
+		
+/* Shopping Cart styles including shopping cart, teaser add's and best seller */
+		
+	#shopping_cart{ font-family:Arial, Helvetica, sans-serif;}
+		#shopping_cart ul {width:120px; border:1px solid #a3a3a3; background-color:#FFFFFF; margin:5px 0px 0px 17px; padding:0px; list-style-type:none;}
+		#shopping_cart ul li.title h1 {background-color:#555555; display:block; width:100%;}
+		#shopping_cart ul li.cart h1 a:link {background-color:#555555; display:inline; width:100%; font-size:12px; color:#FFFFFF; margin:0px; padding:0px; text-decoration:none;}
+		#shopping_cart ul li.cart h1 a:visited {background-color:#555555; display:inline; width:100%; font-size:12px; color:#FFFFFF; margin:0px; padding:0px; text-decoration:none;}
+		#shopping_cart ul li {width:100%; margin:0px 0px 0px  0px; padding:0px;}
+		#shopping_cart ul li img {margin:2px 3px auto 0px; text-align:right; float:left;}
+		#shopping_cart img.add {width:120px; border:1px solid #a3a3a3; margin:5px 0px 0px 17px; padding:0px;}
+		#shopping_cart ul h1 {width:120px; background-color:#555555;}
+		#shopping_cart ul li h3 {display:block; margin:2px 0px 3px 25px; padding:0px; line-height:1em; color:#2f2f2f; font-weight:normal; font-size:10px;}
+		#shopping_cart ul li h3 a:link {color:#2f2f2f; text-decoration:none;}
+		#shopping_cart ul li h3 a:visited {color:#2f2f2f; text-decoration:none;}
+		#shopping_cart ul li h4 {display:block; text-align:right; margin:5px 2px 0px 0px; color:red; font-weight:normal; font-size:9px; color:#655d5d; border-bottom:1px dotted #dddddd;}
+		#shopping_cart ul li.title li.empty {font-size:10px; font-weight:normal; width:100%; text-align:center; margin:10px 0px 10px 0px; padding:0px; display:block; background-color:#ffffff; color:red;}
+
+/* start of best seller positioning and font/link styles */
+
+		#shopping_cart ul.bestseller {width:120px; border:1px solid #a3a3a3; background-color:#FFFFFF; margin:5px 0px 0px 17px; padding:0px; list-style-type:none;}
+		#shopping_cart ul.bestseller a:link {margin:0px; padding:0px; color:#4a4a4a; font-size:10px; text-decoration:none;}
+		#shopping_cart ul.bestseller a:visited {margin:0px; padding:0px; color:#4a4a4a; font-size:10px; text-decoration:none;}
+		#shopping_cart ul.bestseller img.bestseller {border-style:none; margin:0px 0px 0px 15px;}
+		#shopping_cart ul.bestseller img.bestseller a:link {border:none;}
+		#shopping_cart ul.bestseller li {margin:0px 3px 0px 5px; padding:0px; width:auto; height:auto; line-height:.8em}
+		#shopping_cart ul.bestseller li.price_block {text-align:right; padding:0px 0px 5px 0px; margin:0px;}
+			#shopping_cart ul.bestseller li.price_block a:link.price {font-size:9px; color:#FF0000; margin:0px 5px 0px 5px; padding:0px;}
+			#shopping_cart ul.bestseller li.price_block a:visited.price {font-size:9px; color:#FF0000; margin:0px 5px 0px 5px; padding:0px; display:block;}
+			#shopping_cart ul.bestseller li.price_block a:link.add_cart {font-size:9px; color:#4a4a4a; margin:0px 5px 0px 5px; padding:0px; display:block;}
+			#shopping_cart ul.bestseller li.price_block a:visited.add_cart {font-size:9px; color:#4a4a4a; margin:0px 5px 0px 5px; padding:0px; display:block;}
+		
+/* If shopping cart is empty, use this style to apply to the li for the correct formatting of "your cart is empty" */
+
+#shopping_cart li.empty {font-size:10px; font-weight:normal; width:100%; text-align:center; margin:10px 0px 10px 0px; padding:0px; display:block; background-color:#ffffff; color:red;}	
+
+#right_ads  {width:120px; margin:5px 0px 0px 17px; padding:0px;}
+
+
+/* Footer styles for positioning and font styles */
+
+		#footer_nav  {font-family:Arial, Helvetica, sans-serif;font-size:10px;color: #ececec;text-decoration:none;padding:0px; line-height: 17px; border-left: 1px dotted #efefef; border-right: 1px dotted #efefef; border-bottom: 1px dotted #efefef;}
+		#footer_nav a { color: white; }
+		.footer_contact { font-size: 11.5px; font-weight: bold; width: 125px;}
+		.footer_sitelinks { width: 75px; }
+		#footer_nav a img { border: none; }
+	
+	#footer {width:800px; height:25px; background-color:#000000; font-family:Arial, Helvetica, sans-serif;}
+		#footer td {text-align:center;}
+		#footer td h1 {color:#ececec; margin:0px; padding:0px; display:inline; font-size:10px;}
+		#footer td h1 a:link {color:#ececec; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:10px; padding:0px 1px 0px 1px;}
+		#footer td h1 a:visited {color:#ececec; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:10px; padding:0px 1px 0px 1px;}
+		#footer td img {border:none;}
+	
+	

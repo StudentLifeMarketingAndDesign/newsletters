@@ -1,0 +1,230 @@
+/* Index page styles: font, positioning, links ...*/
+
+#home_page {text-align:center; font-family:Arial, Helvetica, sans-serif;}
+
+
+/* New six front images style 10/15/08 */
+
+div#sixproducts {
+  
+  width: 490px;
+}
+div.outsix {
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: 2px #CCCCCC solid;
+	margin-left: 8px;
+	margin-top: 4px;
+}
+div.insix {
+	padding-top: 3px;
+	margin-top: 130px;
+	background: url('http://news.imu.uiowa.edu/assets/blackt.png');
+	width: 150px;
+	height: 17px;
+}
+div.insix a {
+	color: #FFFFFF;
+}
+div.textsix {
+	text-align: right;
+	width: 145px;
+}
+
+.sixfrontimages {
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:right;
+	background: no-repeat;
+	font-size:12px;
+	margin-bottom: 2px;
+	margin-right: 3px;
+}
+
+.sixfrontimages a:link {
+	text-decoration: none;
+	color:#FFFFFF;
+	}
+	
+.sixfrontimages a:visited {	
+text-decoration: none;
+	color:#FFFFFF;
+}
+
+/* styles for the 3 colored boxes under the main image */
+
+ #home_page #list_div {width:490px; margin:5px 0px 0px 5px; padding:0px;}
+ #home_page #list_div img.main {width:490px; border:1px solid #999999;}
+ #home_page #list_div div {padding:0px; margin:0px 0px 0px 7px; font-family:Arial, Helvetica, sans-serif;}
+	 #home_page #list_div div h2 {display:inline; margin:2px 0px 0px 0px; line-height:90%; padding:0px; font-size:20px; font-weight:normal; color:#ffffff;}
+	 #home_page #list_div div h2 a:link {display:inline; margin:2px 0px 0px 0px; line-height:90%; padding:0px; font-size:20px; font-weight:normal; color:#ffffff; text-decoration:none;}
+	 #home_page #list_div div h2 a:visited {display:inline; margin:2px 0px 0px 0px; line-height:90%; padding:0px; font-size:20px; font-weight:normal; color:#ffffff; text-decoration:none;}
+	 #home_page #list_div div h2 img {padding:0px 3px 0px 5px; margin:10px 0px 0px 0px;}
+	 #home_page #list_div div h3 {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000;}
+ 
+ #home_page #list_div ul.even {width:163px; list-style-type:none; height:130px; background-color:#544220; display:inline; margin:10px 0px 0px 0px; padding:0px; float:left;}
+ 	#home_page #list_div ul.even div {padding:0px; margin:0px 0px 0px 7px; font-family:Arial, Helvetica, sans-serif;}
+ 	#home_page #list_div ul.even h2 {display:inline; margin:2px 0px 0px 0px; line-height:90%; padding:0px; font-size:20px; font-weight:normal; color:#000000;}
+ 	#home_page #list_div ul.even img {padding:0px 3px 0px 5px; margin:10px 0px 0px 0px;}
+ 	#home_page #list_div ul.even h3 {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000;}
+	#home_page #list_div ul.even h3 a:link {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000; text-decoration:none;}
+	#home_page #list_div ul.even h3 a:visited {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000; text-decoration:none;}	
+	
+ #home_page #list_div ul.odd {width:163px; list-style-type:none; height:130px; background-color:A88541; background-position:bottom; display:inline; margin:10px 0px 0px 0px; padding:0px; float:left;}
+ 	#home_page #list_div ul.odd div {padding:0px; margin:0px 0px 0px 7px; font-family:Arial, Helvetica, sans-serif;}
+ 	#home_page #list_div ul.odd h2 {display:inline; margin:2px 0px 0px 0px; line-height:90%; padding:0px; font-size:26px; font-weight:normal; color:#000000;}
+ 	#home_page #list_div ul.odd img {padding:0px 3px 0px 5px; margin:10px 0px 0px 0px;}
+ 	#home_page #list_div ul.odd h3 {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000;}
+	#home_page #list_div ul.odd h3 a:link {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000; text-decoration:none;}
+	#home_page #list_div ul.odd h3 a:visited {font-size:11px; font-weight:normal; margin:10px 0px 0px 0px; padding:0px; color:#000000; text-decoration:none;}	
+ 
+	
+/* Styles for the bottom part of the 3 colored squares with the images */	
+	 
+	 #home_page #list_div ul.bottom {width:162px; list-style-type:none; height:126px; background-color:#FFFFFF; border-bottom:1px solid #e0e0e0; border-left:1px solid #e0e0e0; border-top:1px solid #e0e0e0	 									; display:inline; margin:15px 0px 0px 0px; padding:0px; float:left;}
+	 
+	 
+	 /* Widths on these three entries should be adjusted when new images are added to insure correct spacing in IE */
+	 #home_page #list_div ul.bottom li.t_left { margin:0px; width:145px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/B0188.jpg) no-repeat top left;}
+	 #home_page #list_div ul.bottom li.t_middle { margin:0px; width:147px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/C0412.jpg) no-repeat top left;}
+	 #home_page #list_div ul.bottom li.t_right { margin:0px; width:147px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/Y0130.jpg) no-repeat top left;}
+	 
+	 
+	  #home_page #list_div ul.bottom li.b_left { margin:0px; width:145px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/S0139.jpg) no-repeat top left;}
+	 #home_page #list_div ul.bottom li.b_middle { margin:0px; width:147px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/A0199.jpg) no-repeat top left;}
+	 #home_page #list_div ul.bottom li.b_right { margin:0px; width:147px; padding:0px; text-align:left; height:126px; background:url(http://www.hawkshop.com/webitemimages/103/main/O0010.jpg) no-repeat top left;}
+	 
+	 
+	 #home_page #list_div ul.bottom li p {float: right; margin:110px 5px 0px 0px; font-size:12px; color:#000000;}
+	 #home_page #list_div ul.bottom li a:link {color:#FFFFFF; text-decoration:none;}
+	 #home_page #list_div ul.bottom li a:visited {color:#FFFFFF; text-decoration:none;}
+
+/* Styles for homepage bottom links */
+
+
+.hpfooter {font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #000000; text-decoration: none;
+}
+
+/* end of home page styles */
+ 
+
+
+
+/* Product Page Styles ------------------- product_page.html */
+
+#product_page {text-align:center; font-family:Arial, Helvetica, sans-serif; background-color:#ffffff;}
+	
+/* Main Product Image--------- */	
+	
+/* Description and title font styles and positioning ------*/	
+	#product_page p.product_title {margin:0px 0px 0px 0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#6a6565; font-weight:bold; text-align:left;}
+	/* commented back slash hack \*/
+		#product_page p.product_title {margin:0px 0px 0px 0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#6a6565; font-weight:bold; text-align:left;}
+		html>body #product_page p.product_title {margin:25px 0px 0px 0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#6a6565; font-weight:bold; text-align:left;}
+	/*end hack */
+	
+	#product_page h1.title {font-family:Arial, Helvetica, sans-serif; font-size:13px; text-decoration:underline; display:block; margin:20px 0px 0px 0px; padding:0px; text-align:left;}
+	
+	#product_page #image {float:left; text-align:center; margin:0px 5px 5px 0px; width: 320px;}
+	#product_page #image h6 {display:block; color:#000000; margin:0px; padding:0px; font-size:10px; width: 320px;}
+	
+	#product_page #description {font-size:11px; margin:0px; text-align:left; padding:0px; color:#7d7878; float:left; height:auto; font-weight:normal; width: 180px;}
+	
+
+	
+/* Product Page Header -------*/
+
+	#product_page #middle_nav {margin:0px; padding:0px;  height:20px; display:block; vertical-align:top;}
+	#product_page #middle_nav td.titlecellunderline { padding:4px 0 0 0; width:500px; vertical-align:bottom;}
+	#product_page #middle_nav h1 {margin:0 0 -4px 0; padding:0; font-size:19px; text-align:left; font-family:Arial, Helvetica, sans-serif;}
+		/* commented back slash hack \*/ 
+		#product_page #middle_nav h1 {margin:0 0 -.2em 0; padding:0; font-size:19px; text-align:left; font-family:Arial, Helvetica, sans-serif;}
+		html>body #product_page #middle_nav h1 {margin:0 0 -.3em 0}
+		/* end hack */
+	#product_page #middle_nav p {border-top:1px solid #999999; color:#e6b800; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+	
+	#product_page #middle_nav a:link {margin:0px; padding:6px 2px 0px 0px; text-decoration:none; float:right; color:#000000; font-size:10px; font-family:Arial, Helvetica, sans-serif;}
+	#product_page #middle_nav a:visited {margin:0px; padding:6px 2px 0px 0px; text-decoration:none; float:right; color:#000000; font-size:10px; font-family:Arial, Helvetica, sans-serif;}
+
+
+/* End of Product Page Style --------*/
+
+
+
+/* Styles for each Second Level Page: font, positioning and links */
+#second_level {text-align:center; font-family:Arial, Helvetica, sans-serif;}
+	
+/* Styles for the featured items column on left hand side: links, positioning and font */
+	#second_level div.featured_items {width:176px; float:left;}
+			#second_level div.featured_items h2 {font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffcd05; margin:10px 0px 0px 0px; padding:0px; text-align:center;}
+			#second_level div.featured_items ul {width:176px; height:auto; margin:10px 0px 0px 0px; padding:0px; list-style:none;}
+			#second_level div.featured_items ul li{text-align:center; margin:0px; padding:0px;}
+			#second_level div.featured_items ul li img {padding:0px 25px 10px 25px;}
+			#second_level div.featured_items ul li a:link {font-size:11px; display:block; color:#000000; text-decoration:none; font-family:Arial, Helvetica, sans-serif;}
+			#second_level div.featured_items ul li a:link.price {font-size:10px; display:block; color:#b62020; text-decoration:none; font-family:Arial, Helvetica, sans-serif}
+			#second_level div.featured_items ul li a:visited {font-size:11px; display:block; color:#000000; text-decoration:none; font-family:Arial, Helvetica, sans-serif;}
+			#second_level div.featured_items ul li a:visited.price {font-size:10px; display:block; color:#b62020; text-decoration:none; font-family:Arial, Helvetica, sans-serif}
+
+/* styles for the main 2nd level image: positioning and border */
+			#second_level img.main {margin:10px 0px 0px 10px; border:1px solid #000000; padding:0px; float:right;}
+	
+/* styles for the list of catagories with pictures */	
+	
+			#second_level ul.left_cat {float:left; margin:25px 0px 0px -10px; padding:0px; width:160px; display:inline; list-style-type:none; font-family:Arial, Helvetica, sans-serif;}
+			
+			html>body #second_level ul.left_cat {float:left; margin:25px 0px 0px 12px; padding:0px; width:160px; display:inline; list-style-type:none; font-family:Arial, Helvetica, sans-serif;}
+				#second_level ul.left_cat li {margin:0px 0px 0px 5px; height:50px; padding:0px; background-repeat:no-repeat;}
+				#second_level ul.left_cat li a:link {margin:0px 0px 0px 30px; padding:10px 0px 0px 5px; display:block; color:#000000; font-size:11px; font-weight:normal; text-decoration:none;}
+				#second_level ul.left_cat li a:visited {margin:0px 0px 0px 30px; padding:10px 0px 0px 5px; display:block; color:#000000; font-size:11px; font-weight:normal; text-decoration:none;}
+				#second_level ul.left_cat li img {margin:0px; padding:0px; float:left;}
+				
+			#second_level ul.right_cat {float:right; margin:25px 0px 0px 0px; padding:0px; width:140px; list-style-type:none; list-style-type:none; font-family:Arial, Helvetica, sans-serif;}
+				#second_level ul.right_cat li {margin:0px 0px 0px 5px; height:50px; padding:0px;}
+				#second_level ul.right_cat li img {margin:0px; padding:0px; float:left;}
+				#second_level ul.right_cat li a:link {margin:0px 0px 0px 30px; padding:10px 0px 0px 5px; display:block; color:#000000; font-size:11px; font-weight:normal; text-decoration:none;}
+				#second_level ul.right_cat li a:visited {margin:0px 0px 0px 30px; padding:10px 0px 0px 5px; display:block; color:#000000; font-size:11px; font-weight:normal; text-decoration:none;}
+
+	
+	
+/* Catalog Page -----------------------------*/
+
+#catalog_page {text-align:center; font-family:Arial, Helvetica, sans-serif;}
+	
+	/* Header top nav styles: font/link styles and positioning */
+	#catalog_page #middle_nav {margin:0px; padding:0px;  height:30px; display:block; vertical-align:top; display:block;}
+	#catalog_page #middle_nav td.titlecellunderline { padding:4px 0 0 0; width:500px; vertical-align:bottom;}
+	#catalog_page #middle_nav h1 {margin:0 0 -4px 0; padding:0; font-size:19px; text-align:left; font-family:Arial, Helvetica, sans-serif;}
+		/* commented back slash hack \*/ 
+		#catalog_page #middle_nav h1 {margin:0 0 -.2em 0; padding:0; font-size:19px; text-align:left;}
+		html>body #catalog_page #middle_nav h1 {margin:0 0 -.3em 0}
+		/* end hack */
+	#catalog_page #middle_nav p {border-top:1px solid #999999; color:#e6b800; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+	#catalog_page #middle_nav a:link {margin:0px; padding:6px 2px 0px 0px; text-decoration:none; color:#000000; font-size:10px;}
+	#catalog_page #middle_nav a:visited {margin:0px; padding:6px 2px 0px 0px; text-decoration:none;  color:#000000; font-size:10px;}	
+	#catalog_page #middle_nav a:link.border {margin:0px; padding:6px 2px 0px 0px; text-decoration:none; color:#999999; font-size:10px;}
+	#catalog_page #middle_nav span.border {color:#999999;}
+	#catalog_page #middle_nav a:visited.border {margin:0px 2px 0px 2px; padding:6px 2px 0px 0px; text-decoration:none; color:#999999; font-size:10px;}
+	
+	#catalog_page #middle_nav #pagecount {display: block; float: right;}
+	
+	
+/* Product Row Styles: positioning, links, font  */	
+	#catalog_page th {width:166px;}
+	#catalog_page th img {border:none;}
+	#catalog_page th a:link.product {font-size:11px; color:#000000; margin:0px; padding:0px; text-decoration:none; font-weight:normal; text-align:center; display:block;}
+	#catalog_page th a:visited.product {font-size:11px; color:#000000; margin:0px; padding:0px; text-decoration:none; font-weight:normal; text-align:center; display:block;}
+	#catalog_page th a:link.price {font-size:11px; color:#b62020; margin:0px; padding:0px; text-decoration:none; font-weight:normal; text-align:center; display:block; margin:0px 0px 5px 0px;}
+	#catalog_page th a:visited.price {font-size:11px; color:#b62020; margin:0px; padding:0px; text-decoration:none; font-weight:normal; text-align:center; display:block; margin:0px 0px 5px 0px;}
+	
+	
+/* Bottom repeated Nav styles: font, positioning, links */
+	
+	#catalog_page #bottom_repeat {margin:10px 0px 0px 0px; padding:0px; font-size:10px; font-weight:normal; float:right; display:inline;}
+	#catalog_page #bottom_repeat a:link {margin:0px 2px 0px 0px; padding:0px; text-decoration:none; color:#000000; font-size:10px;}
+	#catalog_page #bottom_repeat a:visited{margin:0px 2px 0px 0px; padding:0px; text-decoration:none; color:#000000; font-size:10px;}
+	#catalog_page span.itemcount {margin:0px 2px 0px 0px; color:#999999;}
+	#catalog_page .catalog_container {margin:20px 0px 0px 0px;text-align:center; border-bottom:1px solid #afafaf;}
+	
+	/*  End Catalog Page -----------------------------*/
+	
