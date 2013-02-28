@@ -15,10 +15,7 @@ class StudentHealthNewsletter extends Page {
 		"HealthAnswer" => "HTMLText",
 		
 		"FeaturedStaffName" => "Varchar(155)",
-		"FeaturedStaffBio" => "HTMLText",
-		
-		"AdditionalEventTitle" => "Varchar(155)",
-		"AdditionalEventContent" => "HTMLText"
+		"FeaturedStaffBio" => "HTMLText"
 		
 		
 						  
@@ -67,10 +64,7 @@ function getCMSFields() {
 			'StudentHealthNewsletterEvent',
 			array('Title' => 'Title'),
 			'getCMSFields_forPopup'
-		));		
-		
-		$f->addFieldToTab("Root.Content.Events", new TextField("AdditionalEventTitle", "Additional Event Section Title"));
-		$f->addFieldToTab("Root.Content.Events", new HTMLEditorField("AdditionalEventContent", "Additional Event Section Content"));
+		));
 		
 		$f->addFieldsToTab("Root.Content.MainFeature",array(
 			new TextField('MainFeatureTitle','Title'),
