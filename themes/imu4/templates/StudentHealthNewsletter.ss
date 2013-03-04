@@ -538,12 +538,12 @@
                                                             <div mc:edit="std_content00">
 
                                                              
-<div style="overflow:hidden; padding:0; position:relative;">
+<div style="overflow:hidden; padding:0; position:relative; background-color:#fff;">
                                                                 <div style="height:100%; background-color: #fff; margin-left:570px; display:block; position:absolute;"></div>
 
                                                                 
                                                                 
-                                                                <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
+                                                                <table style="border: none;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
@@ -551,9 +551,12 @@
 				                                                                <h1 class="h1"><a href="" style="color: #fccf20; text-decoration: none; padding-bottom: 3px;">Upcoming Events</a></h1>
 			                                                                </td>
 		                                                                </tr>
-		                                                                <tr>
+		                                                                		                                                                </tr>
+		                                                                
+	                                                                </tbody>
+                                                                </table>
 		                                                                <% control Events %>
-   <td style="width:50%; border-right:1px solid #000;" valign="top">
+   <div style="padding-bottom: 0; width:271px; border-right:1px solid #000; background-color:#fff; float:left;" valign="top">
    <% if Link %>
 		<h5><a href="$Link">$Title</a></h5>
    <% else %>
@@ -561,17 +564,8 @@
    <% end_if %>
    </b><br />
 		$Content
-</td>
+</div>
 <% end_control %>
-
-
-			
-				                                                          
-		                                                                </tr>
-		                                                                		                                                                </tr>
-		                                                                
-	                                                                </tbody>
-                                                                </table>
                                                                 </div><div style="clear:both"> </div>
 </br>
 
