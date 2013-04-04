@@ -27,7 +27,7 @@
 			* @theme page
 			*/
 			body, #backgroundTable{
-				/*@editable*/ background-color:rgba(36,36,36,1);
+				/*@editable*/ background-color:#000;
 			}
 
 			/**
@@ -36,8 +36,7 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border: 1px solid #DDDDDD;
-							background-color:black;}
+				/*@editable*/ border: 1px solid #DDDDDD;}
 
 			/**
 			* @tab Page
@@ -46,7 +45,7 @@
 			* @style heading 1
 			*/
 			h1, .h1{
-				/*@editable*/ color:#fccf20;
+				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:30px;
@@ -66,7 +65,7 @@
 			* @style heading 2
 			*/
 			h2, .h2{
-				/*@editable*/ color:#fccf20;
+				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:24px;
@@ -86,7 +85,7 @@
 			* @style heading 3
 			*/
 			h3, .h3{
-				/*@editable*/ color:#fccf20;
+				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:20px;
@@ -106,7 +105,7 @@
 			* @style heading 4
 			*/
 			h4, .h4{
-				/*@editable*/ color:#fccf20;
+				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:22px;
@@ -213,8 +212,8 @@
 			*/
 			#templateContainer, .bodyContent{
 				/*@editable*/ 
-				background-image: url('');
-				background-color: #1a1919;
+				background-image: url({$BaseHref}/themes/imu4/images/bg.png);
+				background-color: none;
 				background-repeat: repeat;
 			}
 
@@ -239,7 +238,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#fccf20;
+				/*@editable*/ color:#d6a405;
 				/*@editable*/ font-weight: bold;
 				/*@editable*/ text-decoration: none;
 			}
@@ -258,7 +257,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#1a1919;
+				/*@editable*/ background-color:none;
 				/*@editable*/ border-top:0
 			}
 
@@ -300,7 +299,7 @@
 			* @theme footer
 			*/
 			#social{
-				/*@editable*/ background-color:#fccf20;
+				/*@editable*/ background-color:#d6a405;
 				/*@editable*/ border:0;
 			}
 
@@ -338,11 +337,15 @@
 			}
 			
 			.image_header{
-				background-color: #1a1919;
-				padding-top: 10px;
+				background-color: #4c4c4c;
+				padding-top: 30px;
 				padding-right: 0px;
 				padding-left: 8px;
-				padding-bottom: 0px;
+				padding-bottom: 50px;
+				width: 634px;;
+				border-top: 2px solid #fff;
+				border-left: 2px solid #fff;
+				border-right: 2px solid #fff;
 			}
 			
 			.image_header img{
@@ -361,7 +364,7 @@
 			}
 			
 			.section-container {
-				background-color: #1a1919;
+				background-color: none;
 				/*padding: 10px;
 				margin: 10px 0;*/
 				/*border: 1px solid #ddd;*/
@@ -422,22 +425,24 @@
                             </tr>
                         </tbody></table>
                         <!-- // End Template Preheader \ -->
+                        
+                                            	<div class="image_header">
+                                                 	<img src="{$BaseHref}/themes/imu4/images/studenthealth.png" style="background-color:#000; padding:15px; margin-left:-13px;" alt="Student Health"> 
+                                                 	   <h1 class="h1" style="color:#ddd; font-size:100%; margin-top: 25px; margin-left: 40px; margin-bottom: -40px;" >$Edition</h1>
+                                                   </div>
                     	<table id="templateContainer" border="0" cellpadding="0" cellspacing="0" width="600">
+                    	
                         	<tbody><tr>
                             	<td align="center" valign="top">
                      
                                 </td>
                             </tr>
                         	<tr>
-                            	<td align="center" bgcolor="#1a1919" valign="top">
+                            	<td align="center" valign="top">
                                     <!-- // Begin Template Body \ -->
-                                	<table bgcolor="#1a1919" border="0" cellpadding="0" cellspacing="0" width="600">
+                                	<table border="0" cellpadding="0" cellspacing="0" width="600">
                                     	<tbody><tr>
-                                            <td class="bodyContent" style="background-color: #1a1919;" bgcolor="#1a1919" valign="top">
-                                            	<div class="image_header">
-                                                 	<img src="{$BaseHref}/themes/imu4/images/studenthealth.png" alt="Student Health">
-                                                 	   <h1 class="h1" style="color:white; font-size:120%; margin-top: 5px; margin-left: 40px; margin-bottom: -40px;" >$Edition</h1>
-                                                   </div>
+                                            <td class="bodyContent" valign="top">
                                                    
                                             </td>
                                     	</tr>
@@ -463,9 +468,9 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #c4c4c4; border-bottom: 1px #fff dashed;">$MainFeatureType</h3><% end_if %>
+        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #fff dashed;">$MainFeatureType</h3><% end_if %>
          <% if MainFeatureTitle %>
-				                                                                <h1 class="h1"><a href="" style="color: #fccf20; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
+				                                                                <h1 class="h1"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                               
@@ -493,7 +498,7 @@
 									                                       	<table align="right" width="150">
 											                                        	<tbody><tr>
 											                                            	<td>
-											                                            	<center><a href="LINK" style="color: #fccf20; text-decoration: none;">continue reading...</a></center>
+											                                            	<center><a href="LINK" style="color: #d6a405; text-decoration: none;">continue reading...</a></center>
 											                                            	</td>
 											                                        	</tr>
 									                                         </tbody></table>
@@ -548,7 +553,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h1 class="h1"><a href="" style="color: #fccf20; text-decoration: none; padding-bottom: 3px;">Upcoming Events</a></h1>
+				                                                                <h1 class="h1"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Upcoming Events</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                                		                                                                </tr>
@@ -556,7 +561,7 @@
 	                                                                </tbody>
                                                                 </table>
 		                                                                <% control Events %>
-   <div style="padding-bottom: 0; width:271px; border-right:1px solid #000; background-color:#fff; float:left;" valign="top">
+   <div style="padding-bottom: 0; width:543px; background-color:#fff; float:left;" valign="top">
    <% if Link %>
 		<h5><a href="$Link">$Title</a></h5>
    <% else %>
@@ -575,7 +580,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h1 class="h1"><a href="http://studenthealth.uiowa.edu/health-answers" style="color: #fccf20; text-decoration: none; padding-bottom: 3px;">Health Answers</a></h1>
+				                                                                <h1 class="h1"><a href="http://studenthealth.uiowa.edu/health-answers" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Health Answers</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -596,7 +601,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="http://sexatiowa.wordpress.com/" style="color: #fccf20; text-decoration: none;">Sex@Iowa</a></h2>
+				                                                                <h2 class="h2"><a href="http://sexatiowa.wordpress.com/" style="color: #d6a405; text-decoration: none;">Sex@Iowa</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -607,11 +612,11 @@
 		                                                                </tr>
 	                                                                </tbody>
 		                                                                
-	                                                                <tbody style="width:289px; float:left; border-left:1px solid #000;">
+	                                                                <tbody style="width:289px; float:left; border-left:1px solid #ddd;">
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="" style="color: #fccf20; text-decoration: none;">Free Consultations from Health Iowa</a></h2>
+				                                                                <h2 class="h2"><a href="" style="color: #d6a405; text-decoration: none;">Free Consultations from Health Iowa</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -646,7 +651,7 @@ Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Studen
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="" style="color: #fccf20; text-decoration: none; padding-bottom: 3px;">Staff Profile: $FeaturedStaffName</a></h2>
+				                                                                <h2 class="h2"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Staff Profile: $FeaturedStaffName</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -694,7 +699,7 @@ Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Studen
                                                     <tr>
                                                         <td valign="top" width="350">
                                                             <div mc:edit="std_footer">
-                                                            <a href="http://studenthealth.uiowa.edu/"><img src="{$BaseHref}/themes/imu4/images/footer_oldlogo.png" alt="University of Iowa Student Health">
+                                                            <a href="http://studenthealth.uiowa.edu/"><img src="{$BaseHref}/themes/imu4/images/footer_logo.png" alt="University of Iowa Student Health">
                                                             </a>
 																<br>
 						
