@@ -27,7 +27,7 @@
 			* @theme page
 			*/
 			body, #backgroundTable{
-				/*@editable*/ background-color:#3399CC
+				/*@editable*/ background-color:#8e9a2d
 			}
 
 			/**
@@ -36,7 +36,7 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border: 1px solid #DDDDDD;}
+				/*@editable*/ border: 1px solid #eaf515DDD;}
 
 			/**
 			* @tab Page
@@ -337,15 +337,15 @@
 			}
 			
 			.image_header{
-				background-color: #285676;
+				background-color: #125a65;
 				padding-top: 30px;
 				padding-right: 0px;
 				padding-left: 8px;
 				padding-bottom: 50px;
 				width: 630px;
-				border-top: 2px solid #fff;
-				border-left: 2px solid #fff;
-				border-right: 2px solid #fff;
+				border-top: 2px solid #eaf515;
+				border-left: 2px solid #eaf515;
+				border-right: 2px solid #eaf515;
 			}
 			
 			.image_header img{
@@ -367,7 +367,7 @@
 				background-color: none;
 				/*padding: 10px;
 				margin: 10px 0;*/
-				/*border: 1px solid #ddd;*/
+				/*border: 1px solid #eaf515;*/
 			}
 			
 			.section-container h2 {
@@ -393,6 +393,10 @@
 			
 			.intro{
 				padding: 10px;
+			}
+			
+			#templateContainer{
+				border: 1px solid #eaf515;
 			}
 		</style>
 	</head>
@@ -463,12 +467,12 @@
                                                              
                                                                 
                                                                 
-                                                                <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #fff dashed;">$MainFeatureType</h3><% end_if %>
+        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #eaf515 dashed;">$MainFeatureType</h3><% end_if %>
          <% if MainFeatureTitle %>
 				                                                                <h1 class="h1"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
 			                                                                </td>
@@ -515,7 +519,7 @@
         <td valign="top">
                                                             <div mc:edit="std_content00">
         
-                                                                <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
+                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
                                                                 <tbody>
         <tr>
                 <td style="background-color: #FFF; border-collapse: collapse;" border="0"><h3 style="color: {$HeaderColor};">$Title</h3>
@@ -574,7 +578,7 @@
 </br>
 
                                                                 
-                                                                <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
@@ -595,7 +599,7 @@
                                                                  <br>
 
                                                                 
-                                                                <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
+                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
 	                                                                <tbody style="width:49%; float:left;">
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
@@ -611,7 +615,7 @@
 		                                                                </tr>
 	                                                                </tbody>
 		                                                                
-	                                                                <tbody style="width:49%; float:left; border-left:1px solid #ddd;">
+	                                                                <tbody style="width:49%; float:left; border-left:1px solid #eaf515;">
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
@@ -645,7 +649,7 @@ Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Studen
                                                 
                                                </br>
                                                                 
-                                                                                                                               <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                                                                               <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
