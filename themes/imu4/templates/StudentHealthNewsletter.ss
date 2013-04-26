@@ -27,7 +27,7 @@
 			* @theme page
 			*/
 			body, #backgroundTable{
-				/*@editable*/ background-color:#ddd;
+				/*@editable*/ background-color:#3399CC
 			}
 
 			/**
@@ -212,7 +212,7 @@
 			*/
 			#templateContainer, .bodyContent{
 				/*@editable*/ 
-				background-image: url({$BaseHref}/themes/imu4/images/bg.png);
+				background-image: url({$BaseHref}/themes/imu4/images/bg-orange.png);
 				background-color: none;
 				background-repeat: repeat;
 			}
@@ -337,12 +337,12 @@
 			}
 			
 			.image_header{
-				background-color: #4c4c4c;
+				background-color: #285676;
 				padding-top: 30px;
 				padding-right: 0px;
 				padding-left: 8px;
 				padding-bottom: 50px;
-				width: 1030px;
+				width: 630px;
 				border-top: 2px solid #fff;
 				border-left: 2px solid #fff;
 				border-right: 2px solid #fff;
@@ -430,7 +430,7 @@
                                                  	<img src="{$BaseHref}/themes/imu4/images/studenthealth.png" style="background-color:#000; padding:15px; margin-left:-13px;" alt="Student Health"> 
                                                  	   <h1 class="h1" style="color:#ddd; font-size:100%; margin-top: 25px; margin-left: 40px; margin-bottom: -40px;" >$Edition</h1>
                                                    </div>
-                    	<table id="templateContainer" border="0" cellpadding="0" cellspacing="0" width="960">
+                    	<table id="templateContainer" border="0" cellpadding="0" cellspacing="0" width="540">
                     	
                         	<tbody><tr>
                             	<td align="center" valign="top">
@@ -440,14 +440,14 @@
                         	<tr>
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Body \ -->
-                                	<table border="0" cellpadding="0" cellspacing="0" width="600">
+                                	<table border="0" cellpadding="0" cellspacing="0" width="540">
                                     	<tbody><tr>
                                             <td class="bodyContent" valign="top">
                                                    
                                             </td>
                                     	</tr>
                                 	</tbody></table>
-                                	<table id="templateBody" border="0" cellpadding="10" cellspacing="0" width="940">
+                                	<table id="templateBody" border="0" cellpadding="10" cellspacing="0" width="500">
                                     	<tbody><tr>
                                             <td class="bodyContent" valign="top">
 
@@ -480,7 +480,7 @@
 	         <% control MainFeatureImage.SetWidth(570) %>
 		                                                                <tr>
 		                                                                <td style="padding: 10px; text-align:center;" valign="top">
-	        	 <img src="{$BaseHref}{$Filename}" width="570px" style="margin-top:20px;" />
+	        	 <img src="{$BaseHref}{$Filename}" width="500px" style="margin-top:20px;" />
 				                                                                
 				                                                        </td>
 	         <% end_control %>
@@ -517,12 +517,12 @@
         
                                                                 <table style="border: 1px solid #ddd;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
                                                                 <tbody>
-        <tr width="580">
-                <td style="background-color: #FFF; border-collapse: collapse;" border="0" width="660"><h3 style="color: {$HeaderColor};">$Title</h3>
+        <tr>
+                <td style="background-color: #FFF; border-collapse: collapse;" border="0"><h3 style="color: {$HeaderColor};">$Title</h3>
      		$Content</td>
         <td style="background-color: #FFF; border-collapse: collapse;" border="0"><% if Image %>
         	<% control Image.SetWidth(150) %>
-        	<img src="{$BaseHref}{$Filename}" style="float: right; padding: 10px;" />
+        	<img src="{$BaseHref}{$Filename}" style="float: left; padding: 10px;" />
         	<% end_control %>
         <% end_if %></td>
 
@@ -560,7 +560,7 @@
 	                                                                </tbody>
                                                                 </table>
 		                                                                <% control Events %>
-   <div style="padding-bottom: 0; width:900px; background-color:#fff; float:left;" valign="top">
+   <div style="padding-bottom: 0; width:500px; background-color:#fff; float:left;" valign="top">
    <% if Link %>
 		<h5><a href="$Link">$Title</a></h5>
    <% else %>
