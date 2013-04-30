@@ -36,7 +36,12 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border: 1px solid #125a65DDD;}
+				/*@editable*/ border: 1px solid #125a65;
+				width:600px;
+				table-layout:fixed;}
+			#templateBody{
+				width:598px;
+				table-layout:fixed;}
 
 			/**
 			* @tab Page
@@ -196,7 +201,6 @@
 
 			#headerImage{
 				height:auto;
-				max-width:600px !important;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
@@ -220,7 +224,7 @@
 			* @theme main
 			*/
 			.bodyContent div{
-				/*@editable*/ color:#505050;
+				/*@editable*/ color:#000;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:14px;
 				/*@editable*/ line-height:150%;
@@ -333,30 +337,12 @@
 			}
 			
 			.image_header{
-				background-color: #125a65;
-				padding-top: 30px;
-				padding-right: 0px;
-				padding-left: 8px;
-				padding-bottom: 50px;
-				width: 630px;
-				border-top: 2px solid #125a65;
-				border-left: 2px solid #125a65;
-				border-right: 2px solid #125a65;
+				padding: 0px;
 			}
 			
 			.image_header img{
 				display: block;
 				padding-bottom: 0px;
-			}
-			
-			.image_header h1 {
-				color: white;
-				margin-left: 25px;
-				margin-top: -10px;
-				padding-bottom: 20px;
-				border-top: none;
-
-				
 			}
 			
 			.section-container {
@@ -427,10 +413,9 @@
                         <!-- // End Template Preheader \ -->
                         
                                             	<div class="image_header">
-                                                 	<img src="{$BaseHref}/themes/imu4/images/studenthealth.png" style="background-color:#000; padding:15px; margin-left:-13px;" alt="Student Health"> 
-                                                 	   <h1 class="h1" style="color:#ddd; font-size:100%; margin-top: 25px; margin-left: 40px; margin-bottom: -40px;" >$Edition</h1>
+                                                 	<a href="http://studenthealth.uiowa.edu"><img src="{$BaseHref}/themes/imu4/images/studenthealth.png" width="570px" style="background-color:#000; padding:15px;" alt="Student Health"></a>
                                                    </div>
-                    	<table id="templateContainer" border="0" cellpadding="0" cellspacing="0" width="540">
+                    	<table id="templateContainer" border="0" cellpadding="0" cellspacing="0">
                     	
                         	<tbody><tr>
                             	<td align="center" valign="top">
@@ -440,14 +425,15 @@
                         	<tr>
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Body \ -->
-                                	<table border="0" cellpadding="0" cellspacing="0" width="540">
+                                	<table border="0" cellpadding="0" cellspacing="0">
                                     	<tbody><tr>
                                             <td class="bodyContent" valign="top">
                                                    
                                             </td>
                                     	</tr>
                                 	</tbody></table>
-                                	<table id="templateBody" border="0" cellpadding="10" cellspacing="0" width="500">
+                                	<table id="templateBody" border="0" cellpadding="10" cellspacing="0">
+                                                 	   <h1 style="margin-top:18px; margin-left:20px; margin-bottom:-20px; text-align: left; float:left; color:white; font-size:30px">$Edition</h1>
                                     	<tbody><tr>
                                             <td class="bodyContent" valign="top">
 
@@ -468,7 +454,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #125a65 dashed;">$MainFeatureType</h3><% end_if %>
+        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #37a6b7; border-bottom: 1px #125a65 dashed;">$MainFeatureType</h3><% end_if %>
          <% if MainFeatureTitle %>
 				                                                                <h1 class="h1"><a href="" style="color: #125a65; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
 			                                                                </td>
@@ -477,10 +463,10 @@
 		                                                               <% end_if %>
          
          <% if MainFeatureImage %>
-	         <% control MainFeatureImage.SetWidth(570) %>
+	         <% control MainFeatureImage.SetWidth(500) %>
 		                                                                <tr>
 		                                                                <td style="padding: 10px; text-align:center;" valign="top">
-	        	 <img src="{$BaseHref}{$Filename}" width="500px" style="margin-top:20px;" />
+	        	 <img src="{$BaseHref}{$Filename}" style="margin-top:20px;" />
 				                                                                
 				                                                        </td>
 	         <% end_control %>
@@ -519,12 +505,12 @@
                                                                 <tbody>
         <tr>
                 <td style="background-color: #FFF; border-collapse: collapse;" border="0"><h3 style="color: {$HeaderColor};">$Title</h3>
-     		$Content</td>
-        <td style="background-color: #FFF; border-collapse: collapse;" border="0"><% if Image %>
-        	<% control Image.SetWidth(150) %>
+     		<% if Image %>
+        	<% control Image.SetWidth(300) %>
         	<img src="{$BaseHref}{$Filename}" style="float: left; padding: 10px;" />
         	<% end_control %>
-        <% end_if %></td>
+        <% end_if %>
+        $Content</td>
 
             </tr>
         </tbody>
@@ -560,7 +546,7 @@
 	                                                                </tbody>
                                                                 </table>
 		                                                                <% control Events %>
-   <div style="padding-bottom: 0; width:500px; background-color:#fff; float:left;" valign="top">
+   <div style="padding-bottom: 0; background-color:#fff; float:left;" valign="top">
    <% if Link %>
 		<h5><a href="$Link">$Title</a></h5>
    <% else %>
@@ -679,54 +665,16 @@ Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Studen
                                     <!-- // End Template Body \ -->
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top">
-                                    <!-- // Begin Template Footer \ -->
-                                	<table id="templateFooter" border="0" cellpadding="0" cellspacing="0" width="600">
-                                    	<tbody><tr>
-                                        	<td class="footerContent" valign="top">
-                                            
-                                                <!-- // Begin Module: Standard Footer \ -->
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tbody><tr>
-                                                        <!--<td colspan="2" valign="middle" id="social">
-                                                            <div mc:edit="std_social">
-                                                                &nbsp;<a href="*|TWITTER:PROFILEURL|*">follow on Twitter</a> | <a href="*|FACEBOOK:PROFILEURL|*">friend on Facebook</a> | <a href="*|FORWARD|*">forward to a friend</a>&nbsp;
-                                                            </div>
-                                                        </td>-->
-                                                    </tr>
-                                                    <tr>
-                                                        <td valign="top" width="350">
-                                                            <div mc:edit="std_footer">
-                                                            <a href="http://studenthealth.uiowa.edu/"><img src="{$BaseHref}/themes/imu4/images/footer_logo.png" alt="University of Iowa Student Health">
-                                                            </a>
-																<br>
-						
-                                                            </div>
-                                                        </td>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                       <!-- <td colspan="2" valign="middle" id="utility">
-                                                            <div mc:edit="std_utility">
-                                                                &nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
-                                                            </div>
-                                                        </td>-->
-                                                    </tr>
-                                                </tbody></table>
-                                                <!-- // End Module: Standard Footer \ -->
-                                            
-                                            </td>
-                                        </tr>
-                                    </tbody></table>
-                                    <!-- // End Template Footer \ -->
-                                </td>
-                            </tr>
                         </tbody></table>
                         <br>
                     </td>
                 </tr>
             </tbody></table>
+                                                            <div mc:edit="std_footer">
+                                                            <a href="http://studenthealth.uiowa.edu/"><img src="{$BaseHref}/themes/imu4/images/footer_logo.png" width="600px" style="margin:0 auto" alt="University of Iowa Student Health">
+                                                            </a>
+						
+                                                            </div>
         </center>
     
 </body></html>
