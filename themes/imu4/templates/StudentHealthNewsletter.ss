@@ -42,6 +42,10 @@
 			#templateBody{
 				width:598px;
 				table-layout:fixed;}
+				
+			img.postImage{
+				max-width: 300px;
+			}
 
 			/**
 			* @tab Page
@@ -506,8 +510,8 @@
         <tr>
                 <td style="background-color: #FFF; border-collapse: collapse;" border="0"><h3 style="color: {$HeaderColor};">$Title</h3>
      		<% if Image %>
-        	<% control Image.SetWidth(300) %>
-        	<img src="{$BaseHref}{$Filename}" style="float: left; padding: 10px;" />
+        	<% control Image %>
+        	<img class="postImage" src="{$BaseHref}{$Filename}" style="float: left; padding: 10px;" />
         	<% end_control %>
         <% end_if %>
         $Content</td>
