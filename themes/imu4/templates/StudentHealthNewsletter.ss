@@ -36,7 +36,7 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border: 1px solid #eaf515DDD;}
+				/*@editable*/ border: 1px solid #125a65DDD;}
 
 			/**
 			* @tab Page
@@ -45,7 +45,6 @@
 			* @style heading 1
 			*/
 			h1, .h1{
-				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:30px;
@@ -65,7 +64,6 @@
 			* @style heading 2
 			*/
 			h2, .h2{
-				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:24px;
@@ -85,7 +83,6 @@
 			* @style heading 3
 			*/
 			h3, .h3{
-				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:20px;
@@ -105,7 +102,6 @@
 			* @style heading 4
 			*/
 			h4, .h4{
-				/*@editable*/ color:#d6a405;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:22px;
@@ -238,7 +234,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#d6a405;
+				/*@editable*/ color:#125a65;
 				/*@editable*/ font-weight: bold;
 				/*@editable*/ text-decoration: none;
 			}
@@ -299,7 +295,7 @@
 			* @theme footer
 			*/
 			#social{
-				/*@editable*/ background-color:#d6a405;
+				/*@editable*/ background-color:#125a65;
 				/*@editable*/ border:0;
 			}
 
@@ -343,9 +339,9 @@
 				padding-left: 8px;
 				padding-bottom: 50px;
 				width: 630px;
-				border-top: 2px solid #eaf515;
-				border-left: 2px solid #eaf515;
-				border-right: 2px solid #eaf515;
+				border-top: 2px solid #125a65;
+				border-left: 2px solid #125a65;
+				border-right: 2px solid #125a65;
 			}
 			
 			.image_header img{
@@ -367,7 +363,7 @@
 				background-color: none;
 				/*padding: 10px;
 				margin: 10px 0;*/
-				/*border: 1px solid #eaf515;*/
+				/*border: 1px solid #125a65;*/
 			}
 			
 			.section-container h2 {
@@ -396,7 +392,7 @@
 			}
 			
 			#templateContainer{
-				border: 1px solid #eaf515;
+				border: 1px solid #125a65;
 			}
 		</style>
 	</head>
@@ -467,14 +463,14 @@
                                                              
                                                                 
                                                                 
-                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                <table  bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #eaf515 dashed;">$MainFeatureType</h3><% end_if %>
+        <% if MainFeatureType %> <h3 style="font-size: 24px; color: #505050; border-bottom: 1px #125a65 dashed;">$MainFeatureType</h3><% end_if %>
          <% if MainFeatureTitle %>
-				                                                                <h1 class="h1"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
+				                                                                <h1 class="h1"><a href="" style="color: #125a65; text-decoration: none; padding-bottom: 3px;">$MainFeatureTitle</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                               
@@ -502,7 +498,7 @@
 									                                       	<table align="right" width="150">
 											                                        	<tbody><tr>
 											                                            	<td>
-											                                            	<center><a href="LINK" style="color: #d6a405; text-decoration: none;">continue reading...</a></center>
+											                                            	<center><a href="LINK" style="color: #125a65; text-decoration: none;">continue reading...</a></center>
 											                                            	</td>
 											                                        	</tr>
 									                                         </tbody></table>
@@ -519,7 +515,7 @@
         <td valign="top">
                                                             <div mc:edit="std_content00">
         
-                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
+                                                                <table  bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
                                                                 <tbody>
         <tr>
                 <td style="background-color: #FFF; border-collapse: collapse;" border="0"><h3 style="color: {$HeaderColor};">$Title</h3>
@@ -556,7 +552,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h1 class="h1"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Upcoming Events</a></h1>
+				                                                                <h1 class="h1"><a href="" style="color: #125a65; text-decoration: none; padding-bottom: 3px;">Upcoming Events</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                                		                                                                </tr>
@@ -578,12 +574,12 @@
 </br>
 
                                                                 
-                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                <table  bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h1 class="h1"><a href="http://studenthealth.uiowa.edu/health-answers" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Health Answers</a></h1>
+				                                                                <h1 class="h1"><a href="http://studenthealth.uiowa.edu/health-answers" style="color: #125a65; text-decoration: none; padding-bottom: 3px;">Health Answers</a></h1>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -599,12 +595,12 @@
                                                                  <br>
 
                                                                 
-                                                                <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
+                                                                <table  bgcolor="white" cellpadding="10" cellspacing="4" width="100%">
 	                                                                <tbody style="width:49%; float:left;">
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="http://sexatiowa.wordpress.com/" style="color: #d6a405; text-decoration: none;">Sex@Iowa</a></h2>
+				                                                                <h2 class="h2"><a href="http://sexatiowa.wordpress.com/" style="color: #125a65; text-decoration: none;">Sex@Iowa</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -615,11 +611,11 @@
 		                                                                </tr>
 	                                                                </tbody>
 		                                                                
-	                                                                <tbody style="width:49%; float:left; border-left:1px solid #eaf515;">
+	                                                                <tbody style="width:49%; float:left; border-left:1px solid #125a65;">
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="" style="color: #d6a405; text-decoration: none;">Free Consultations from Health Iowa</a></h2>
+				                                                                <h2 class="h2"><a href="" style="color: #125a65; text-decoration: none;">Free Consultations from Health Iowa</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -649,12 +645,12 @@ Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Studen
                                                 
                                                </br>
                                                                 
-                                                                                                                               <table style="border: 1px solid #eaf515;" bgcolor="white" cellpadding="10" cellspacing="4">
+                                                                                                                               <table  bgcolor="white" cellpadding="10" cellspacing="4">
 	                                                                <tbody>
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="" style="color: #d6a405; text-decoration: none; padding-bottom: 3px;">Staff Profile: $FeaturedStaffName</a></h2>
+				                                                                <h2 class="h2"><a href="" style="color: #125a65; text-decoration: none; padding-bottom: 3px;">Staff Profile: $FeaturedStaffName</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
