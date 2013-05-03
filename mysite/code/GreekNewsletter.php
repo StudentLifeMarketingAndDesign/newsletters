@@ -25,6 +25,18 @@ class GreekNewsletter extends Page {
 	'Feature5Title' => 'Text',
 	'Feature5Text' => 'HTMLText',	
 	'Feature5Caption' => 'Text',
+	
+	'Feature6Title' => 'Text',
+	'Feature6Text' => 'HTMLText',
+	'Feature6Caption' => 'Text',
+	
+	'Feature7Title' => 'Text',
+	'Feature7Text' => 'HTMLText',
+	'Feature7Caption' => 'Text',
+					  
+	'Feature8Title' => 'Text',
+	'Feature8Text' => 'HTMLText',	
+	'Feature8Caption' => 'Text'
 					  
    );
    
@@ -37,6 +49,9 @@ class GreekNewsletter extends Page {
 		'Feature3Image' => 'Image',
 		'Feature4Image' => 'Image',
 	 	'Feature5Image' => 'Image',
+	 	'Feature6Image' => 'Image',
+		'Feature7Image' => 'Image',
+	 	'Feature8Image' => 'Image'
 	  
 	  );
 
@@ -80,6 +95,24 @@ function getCMSFields() {
 	$fields->addFieldToTab('Root.Content.Feature5', new TextField('Feature5Caption', 'Feature 5 Image Caption'));
 	$fields->addFieldToTab('Root.Content.Feature5', new TextField('Feature5Title', 'Feature 5 Title'));
 	$fields->addFieldToTab('Root.Content.Feature5', new HTMLEditorField('Feature5Text', 'Feature 5 Text'));	
+	
+	/* Feature 6 content */
+    $fields->addFieldToTab('Root.Content.Feature6', new ImageField('Feature6Image', 'Feature 6 Image - 160 x 110 pixels'));
+    $fields->addFieldToTab('Root.Content.Feature6', new TextField('Feature6Caption', 'Feature 6 Image Caption'));
+    $fields->addFieldToTab('Root.Content.Feature6', new TextField('Feature6Title', 'Feature 6 Title'));
+    $fields->addFieldToTab('Root.Content.Feature6', new HTMLEditorField('Feature6Text', 'Feature 6 Text')); 
+
+    /* Feature 7 content */
+    $fields->addFieldToTab('Root.Content.Feature7', new ImageField('Feature7Image', 'Feature 7 Image - 170 x 110 pixels'));
+    $fields->addFieldToTab('Root.Content.Feature7', new TextField('Feature7Caption', 'Feature 7 Image Caption'));
+    $fields->addFieldToTab('Root.Content.Feature7', new TextField('Feature7Title', 'Feature 7 Title'));
+    $fields->addFieldToTab('Root.Content.Feature7', new HTMLEditorField('Feature7Text', 'Feature 7 Text')); 
+
+    /* Feature 8 content */
+    $fields->addFieldToTab('Root.Content.Feature8', new ImageField('Feature8Image', 'Feature 8 Image - 180 x 110 pixels'));
+    $fields->addFieldToTab('Root.Content.Feature8', new TextField('Feature8Caption', 'Feature 8 Image Caption'));
+    $fields->addFieldToTab('Root.Content.Feature8', new TextField('Feature8Title', 'Feature 8 Title'));
+    $fields->addFieldToTab('Root.Content.Feature8', new HTMLEditorField('Feature8Text', 'Feature 8 Text')); 
 	
 	
 	return $fields;
