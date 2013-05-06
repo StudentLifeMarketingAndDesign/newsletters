@@ -400,7 +400,11 @@
                                     <p><a style="outline:none;" href="http://www.youtube.com/user/uiowafsl?feature=mhee"><img src="http://news.imu.uiowa.edu/assets/assets/youtube-icon.jpg" width="64" height="64" border="0" /></a></p>
                                 </td>
                                 <td width="26%">
+<<<<<<< HEAD
                                     <p>To unsubscribe from the Informer, please follow <a href="*|UNSUB|*">this link.</a> </p>
+=======
+                                    <p>To unsubscribe, please follow <a href="*|UNSUB|*">this link.</a> </p>
+>>>>>>> Added updated FSL informer newsletter header image and made changes to template.
                                 </td>
                                 <td width="20%">
                                     <p><a style="outline:none;" href="http://uiowafsl.com"><img src="http://news.imu.uiowa.edu/assets/greek-logo.png" alt="fsl logo" width="92" border="0" /></a></p>
