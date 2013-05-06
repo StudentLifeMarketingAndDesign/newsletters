@@ -94,8 +94,7 @@
             <!--Table Row 2 (masthead) -->
             <tr>
                 <!--<td bgcolor="#000000">-->
-                <td><a href="http://www.uiowafsl.com"><img src="http://news.imu.uiowa.edu/themes/imu4/images/frats.png" width="580" height="112" alt="Fraternity and Sorority Life" 
-                    width="580" height="100" border="0" /></a></td>
+                <td><a href="http://www.uiowafsl.com"><img src="http://news.imu.uiowa.edu/themes/imu4/images/frats-informer.png" width="580" height="112" alt="Fraternity and Sorority Life" border="0" /></a></td>
             </tr>
             <!--Table Row 3 (photo)-->
             <tr>
@@ -401,7 +400,7 @@
                                     <p><a style="outline:none;" href="http://www.youtube.com/user/uiowafsl?feature=mhee"><img src="http://news.imu.uiowa.edu/assets/assets/youtube-icon.jpg" width="64" height="64" border="0" /></a></p>
                                 </td>
                                 <td width="26%">
-                                    <p>To unsubscribe from alumni news, please follow <a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=F-SALUMNI-NEWSLETTER&A=1">this link.</a> </p>
+                                    <p>To unsubscribe from the Informer, please follow <a href="*|UNSUB|*">this link.</a> </p>
                                 </td>
                                 <td width="20%">
                                     <p><a style="outline:none;" href="http://uiowafsl.com"><img src="http://news.imu.uiowa.edu/assets/greek-logo.png" alt="fsl logo" width="92" border="0" /></a></p>
