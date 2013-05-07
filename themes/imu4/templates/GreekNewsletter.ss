@@ -320,7 +320,7 @@
                             <td width="260" valign="top">
                                 <ul style="list-style:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; padding:0; margin:0 0 10px 8px;">
                                     <li><a style="outline:none;" href="http://www.uiowafsl.com">Fraternity & Sorority Life at The University of Iowa </a></li>
-                                    <li><a style="outline:none;" href="http://uiowaifc.com/home">Interfraternity Council at The University of Iowa</a></li>
+                                    <li><a style="outline:none;" href="http://uofi.theginsystem.com/index.php?option=com_content&view=article&id=95&Itemid=31">Interfraternity Council at The University of Iowa</a></li>
                                     <li><a style="outline:none;" href="http://uiowamgc.com/home">Multicultural Greek Council at The University of Iowa</a></li>
                                 </ul>
                             </td>
