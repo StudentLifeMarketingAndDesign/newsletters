@@ -437,7 +437,7 @@
                                     	</tr>
                                 	</tbody></table>
                                 	<table id="templateBody" border="0" cellpadding="10" cellspacing="0">
-                                                 	   <h1 style="margin-top:18px; margin-left:20px; margin-bottom:-20px; text-align: left; float:left; color:white; font-size:30px">$Edition</h1>
+                                                 	   <h1 style="padding-top:18px; padding-left:20px; padding-bottom:-20px; text-align: left; float:left; color:white; font-size:30px">$Edition</h1>
                                     	<tbody><tr>
                                             <td class="bodyContent" valign="top">
 
@@ -550,7 +550,7 @@
 	                                                                </tbody>
                                                                 </table>
 		                                                                <% control Events %>
-   <div style="padding-bottom: 0; background-color:#fff; float:left;" valign="top">
+   <div class="upcomingevents" style="padding-bottom: 0; background-color:#fff; float:left; line-height:16px;" valign="top">
    <% if Link %>
 		<h5><a href="$Link">$Title</a></h5>
    <% else %>
@@ -576,7 +576,8 @@
 				                                                        <td valign="top">
 				                                                                <p>$HealthQuestion</p>
 				                                                                <p>$HealthAnswer</p>
-
+				                                                                <hr />
+				                                                                <a href="http://studenthealth.uiowa.edu/ask-your-question/"><h3>Ask Your Question</h3></a>
 			                                                               </td>
 		                                                                </tr>
 		                                                              		                                                                
@@ -595,8 +596,13 @@
 		                                                                </tr>
 		                                                                <tr>
 				                                                        <td valign="top">
-				                                                                <p>Check out our new blog, Sex@Iowa. This new blog answers all of your sex questions, and is published by Dr. Ann Laros and Dr. Eric Evans.</p>
-				                                                          
+				                                                                <p>Check out our new blog, Sex@Iowa. This new blog answers all of your sex questions, and is published by Dr. Ann Laros and Dr. Eric Evans.</p><hr />
+				                                                              <p> <h3>Follow us on <a href="https://twitter.com/Hawkeye_Health">Twitter</a></h3>
+<a href="https://twitter.com/intent/follow?screen_name=Hawkeye_Health&tw_p=followbutton&variant=2.0"><img src="{$BaseHref}/themes/imu4/images/twitter.png" width="196px" alt="Follow @Hawkeye_Health"></a></p>
+<p>
+<h3>Subscribe to us on</h3>
+<a href="http://www.youtube.com/user/UIStudentWellness"><img src="{$BaseHref}/themes/imu4/images/youtube.png" width="95px" alt="YouTube"></a>
+</p>			                                                          
 			                                                                </td>
 		                                                                </tr>
 	                                                                </tbody>
@@ -605,7 +611,7 @@
 		                                                                <tr>
 			                                                                <td colspan="2" style="padding: 10px;">
 				                                                        
-				                                                                <h2 class="h2"><a href="" style="color: #125a65; text-decoration: none;">Free Consultations from Health Iowa</a></h2>
+				                                                                <h2 class="h2"><a href="" style="color: #125a65; text-decoration: none;">Free Wellness Consultations</a></h2>
 			                                                                </td>
 		                                                                </tr>
 		                                                                <tr>
@@ -620,7 +626,7 @@
             <li>Tobacco Cessation</li>
             </ul>
 
-Health Iowa has two locations: the CRWC Wellness Suite (319-353-2973) and Student Health (319-335-8394). Call today to schedule your FREE appointment!</p>
+Student Wellness has two locations: The CRWC Wellness Services Suite (319-353-2973) and Westlawn Building (319-335-8394).....</p>
 			
 				                                                          
 			                                                                </td>
