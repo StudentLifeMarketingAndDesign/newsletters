@@ -9,6 +9,8 @@ class StudentHealthNewsletter extends Page {
    
    		"MainFeatureType" => "Text",
 		"MainFeatureTitle" => "Text",
+		"MainFeatureLink" => "Text",
+		"MainFeatureMoreText" => "Text",
 		"MainFeatureContent" => "HTMLText",
 		
 		"HealthQuestion" => "HTMLText",
@@ -68,6 +70,8 @@ function getCMSFields() {
 		
 		$f->addFieldsToTab("Root.Content.MainFeature",array(
 			new TextField('MainFeatureTitle','Title'),
+			new TextField('MainFeatureLink','Link (optional)'),
+			new TextField('MainFeatureMoreText','Link Text (example: See the video demo!)(optional)'),
 			new TextField('MainFeatureType', 'Type'), 
 			new ImageField('MainFeatureImage', 'Image (450 pixels wide)'),
 			new HTMLEditorField('MainFeatureContent', 'Content', $rows = 5))
