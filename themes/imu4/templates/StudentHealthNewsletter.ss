@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type"
               content="text/html; charset=iso-8859-1" />
         <title>
-            Student Health E-Newsletter - $Edition
+            Student Health & Wellness E-Newsletter - $Edition
         </title>
         <style type="text/css">
 /*<![CDATA[*/
@@ -84,7 +84,7 @@
                 /*@editable*/ line-height:100%;
                 margin-top:0;
                 margin-right:0;
-                margin-bottom:-10px;
+              /*  margin-bottom:-10px; */
                 margin-left:0;
                 /*@editable*/ text-align:left;
                 color: #069;
@@ -411,17 +411,18 @@
                    width="100%">
                 <tbody>
                     <tr>
-                        <td
+                        <td style="font-family: Arial"
                             valign="top" align="center">
                             <!-- // Begin Template Preheader \ -->
                             <table id="templatePreheader"
                                    border="0"
                                    cellpadding="10"
                                    cellspacing="0"
-                                   width="600">
+                                   width="600"
+                                   w>
                                 <tbody>
                                     <tr>
-                                        <td class="preheaderContent"
+                                        <td style="font-family: Arial" class="preheaderContent"
                                             valign="top">
                                             <!-- // Begin Module: Standard Preheader \ -->
                                             <table border="0"
@@ -431,7 +432,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                                        <td valign="top"
+                                                        <td style="font-family: Arial" valign="top"
                                                             width="190">
                                                             <div mc:edit="std_preheader_links">
                                                                 Is this email not displaying correctly?
@@ -449,7 +450,7 @@
                             </table><!-- // End Template Preheader \ -->
                             <table style="border-spacing: 0" border="0" width="600" bgcolor="#000" style="height: 60px;" cellpadding="15">
                             <tr>
-                            <td bgcolor="#000000" >
+                            <td style="font-family: Arial" bgcolor="#000000" >
                             <div class="image_header">
                                 <a href="http://studenthealth.uiowa.edu"><img src="{$BaseHref}/themes/imu4/images/studenthealth.png"
                                      style="background-color:#000;"
@@ -464,11 +465,11 @@
                                    cellspacing="0" width="600">
                                 <tbody>
                                     <tr>
-                                        <td align="center"
+                                        <td style="font-family: Arial" align="center"
                                             valign="top"></td>
                                     </tr>
                                     <tr>
-                                        <td align="center"
+                                        <td style="font-family: Arial" align="center"
                                             valign="top">
                                             <!-- // Begin Template Body \ -->
                                             <table border="0"
@@ -476,18 +477,25 @@
                                                    cellspacing="0">
                                                 <tbody>
                                                     <tr>
-                                                        <td class="bodyContent"
-                                                            valign="top" bgcolor="#F1C654"  align="left">
-                                            <h1 style="padding-top:18px; padding-left:20px; padding-bottom:-20px; text-align: left; float:left; color:white; font-size:30px; text-shadow: 0 2px 0 #be9c42;">
+                                                        <td style="font-family: Arial" class="bodyContent"
+                                                            valign="top" bgcolor="#F1C654"  align="left" style="font-family: Arial">
+                                            <table cellpadding="10">
+                                            <tbody>
+                                            <tr>
+                                            <td>
+                                            <h1 style="text-align: left; float:left; color:white; font-size:30px; text-shadow: 0 2px 0 #be9c42;">
                                                 $Edition
                                             </h1>
+                                            </td>
+                                            </tr>
+                                            </tbody>
                                             <table id="templateBody"
                                                    border="0"
                                                    cellpadding="10"
                                                    cellspacing="0">
                                                 <tbody>
                                                     <tr>
-                                                        <td class="bodyContent"
+                                                        <td style="font-family: Arial" class="bodyContent"
                                                             valign="top">
                                                             <!-- // Begin Module: Standard Content \ -->
 
@@ -498,7 +506,7 @@
                                                                    width="100%">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td valign="top">
+                                                                        <td style="font-family: Arial" valign="top">
                                                                             <div mc:edit="std_content00">
                                                                                 <table bgcolor="white"
                                                                                        cellpadding="10"
@@ -506,7 +514,7 @@
                                                                                        style="border: 1px solid #be9c42;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td colspan="2"
+                                                                                            <td style="font-family: Arial" colspan="2"
                                                                                                 style="padding: 10px;">
                                                                                                 <% if MainFeatureType %>
                                                                                                 <h3 style="font-size: 24px; color: #37a6b7; border-bottom: 1px #ccc solid; padding-bottom: 5px;">
@@ -519,27 +527,27 @@
                                                                                             </td>
                                                                                         </tr><% end_if %><% if MainFeatureImage %><% control MainFeatureImage.SetWidth(500) %>
                                                                                         <tr>
-                                                                                            <td style="padding: 10px; text-align:center;"
+                                                                                            <td style="font-family: Arial" style="padding: 10px; text-align:center;"
                                                                                                 valign="top">
                                                                                                 <img src="{$BaseHref}{$Filename}"
                                                                                                     style="margin-top:20px;" />
                                                                                             </td><% end_control %><% end_if %>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td valign="top">
-                                                                                                <p>
+                                                                                            <td style="font-family: Arial" valign="top">
+                                                                                       
                                                                                                     $MainFeatureContent
-                                                                                                </p>
+                                                                                        
                                                                                             </td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td colspan="2"
+                                                                                            <td style="font-family: Arial" colspan="2"
                                                                                                 align="right">
                                                                                                 <table align="right"
                                                                                                        width="150">
                                                                                                     <tbody>
                                                                                                         <tr>
-                                                                                                            <td>
+                                                                                                            <td style="font-family: Arial">
                                                                                                                 <% if MainFeatureLink %>
                                                                                                                 <center>
                                                                                                                     <a href="$MainFeatureLink"
@@ -561,7 +569,7 @@
                                                                                        width="100%">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td valign="top">
+                                                                                            <td style="font-family: Arial" valign="top">
                                                                                                 <div mc:edit="std_content00">
                                                                                                     <table bgcolor="white"
                                                                                                            cellpadding="10"
@@ -570,13 +578,14 @@
                                                                                                            style="border: 1px solid #be9c42;">
                                                                                                         <tbody>
                                                                                                             <tr>
-                                                                                                                <td style="background-color: #FFF; border-collapse: collapse;"
+                                                                                                                <td style="font-family: Arial" style="background-color: #FFF; border-collapse: collapse;"
                                                                                                                     border="0">
                                                                                                                     <h3 style="color: {$HeaderColor};">
                                                                                                                         $Title
-                                                                                                                    </h3><% if Image %><% control Image.SetWidth(200) %><img class="postImage"
+                                                                                                                    </h3><% if Image %><table align="right"><tbody><tr><td><% control Image.SetWidth(200) %><img class="postImage"
                                                                                                                         src="{$AbsoluteURL}"
-                                                                                                                        style="float: right; padding: 10px;" /> <% end_control %> <% end_if %> $Content
+                                                                                                                        style="float: right; padding: 10px;" /> <% end_control %> <% end_if %></td></tr></tbody></table> $Content
+                                                                                                                
                                                                                                                 </td>
                                                                                                             </tr>
                                                                                                         </tbody>
@@ -594,7 +603,7 @@
                                                                                        width="100%">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td valign="top">
+                                                                                            <td style="font-family: Arial" valign="top">
                                                                                                 <div mc:edit="std_content00">
                                                                                                     <div style="overflow:hidden; position:relative; background-color:#fff;">
                                                                                                         <table bgcolor="white"
@@ -604,7 +613,7 @@
                                                                                                                style="border: 1px solid #be9c42;">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td colspan="2"
+                                                                                                                    <td style="font-family: Arial" colspan="2"
                                                                                                                         style="padding: 10px;">
                                                                                                                         <h1 class="h1">
                                                                                                                             Upcoming Events
@@ -612,7 +621,7 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                <td>
+                                                                                                                <td style="font-family: Arial">
                                                                                                                 
                                                                                                              <% control Events %>
                                                                                                         <div class="upcomingevents"
@@ -644,7 +653,7 @@
                                                                                                            style="border: 1px solid #be9c42;">
                                                                                                         <tbody>
                                                                                                             <tr>
-                                                                                                                <td colspan="2"
+                                                                                                                <td style="font-family: Arial" colspan="2"
                                                                                                                     style="padding: 10px;">
                                                                                                                     <h1 class="h1">
                                                                                                                         <a href="http://studenthealth.uiowa.edu/health-answers"
@@ -653,7 +662,7 @@
                                                                                                                 </td>
                                                                                                             </tr>
                                                                                                             <tr>
-                                                                                                                <td valign="top">
+                                                                                                                <td style="font-family: Arial" valign="top">
                                                                                                                 
                                                                                                                         $HealthQuestion
 																													
@@ -674,77 +683,105 @@
                                                                                                            cellspacing="4"
                                                                                                            width="100%"
                                                                                                            style="border: 1px solid #be9c42;">
-                                                                                                        <tbody style="width:49%; float:left;">
+                                                                                                        <tbody>
                                                                                                             <tr>
-                                                                                                                <td colspan="2"
-                                                                                                                    style="padding: 10px;">
+                                                                                                                <td style="font-family: Arial" colspan="2"
+                                                                                                                    style="padding: 10px;" valign="top">
+                                                                                                                    
+                                                                                                                    <table>
+                                                                                                                    <tbody>
+                                                                                                                    <tr>
+                                                                                                                    <td style="font-family: Arial"  valign="top">
                                                                                                                     <h2 class="h2">
                                                                                                                         <a href="http://sexatiowa.wordpress.com/"
                                                                                                                             style="color: #069; text-decoration: none;">Sex@Iowa</a>
                                                                                                                     </h2>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                <td valign="top">
                                                                                                                     <p>
                                                                                                                         Check out our new blog, <a href="http://sexatiowa.wordpress.com/"
                                                                                                                            style="color: #DF6421; text-decoration: none;">Sex@Iowa</a>. This new blog answers all of your sex questions, and is published by Dr. Ann Laros and Dr. Eric Evans.
                                                                                                                     </p>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                <td style="border: 1px solid #eee; background-color: #F8F8F8; text-align: center;">
-                                                                                                                    <p></p>
+                                                                                                                    </td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+  <td style="font-family: Arial; text-align: center;"><br />
+  <h2>Stay Connected!</h2>
+  																											<table width="100%" >
+  																											<tbody>
+  																											<tr>
+  																											<td>
+                                                                                                                 <center>
                                                                                                                     <h3 style="text-align: center;">
                                                                                                                         <a style="color:#05B6EF; text-shadow: 0 1px 0 white;"
                                                                                                                             href="https://twitter.com/Hawkeye_Health">Follow us on Twitter</a>
-                                                                                                                    </h3><a href="https://twitter.com/intent/follow?screen_name=Hawkeye_Health&tw_p=followbutton&variant=2.0"><img src="{$BaseHref}/themes/imu4/images/twitter.png"
+                                                                                                                    </h3><a href="https://twitter.com/intent/follow?screen_name=Hawkeye_Health&tw_p=followbutton&variant=2.0"><img style="text-align: center" src="{$BaseHref}/themes/imu4/images/twitter.png"
                                                                                                                          width="196px"
                                                                                                                          alt="Follow @Hawkeye_Health" /></a>
-                                                                                                                    <p></p>
-                                                                                                                    <p></p>
+                                                                                                                 </center>
+                                                                                                                 <br />
+  																											</td>
+  																											</tr>
+  																											<tr>
+  																											<td>
+  																											<center>
                                                                                                                     <h3 style="text-align: center;">
                                                                                                                         <a style="color: #922420; text-shadow: 0 1px 0 white;"
                                                                                                                             href="http://www.youtube.com/user/UIStudentWellness">Subscribe on YouTube</a>
                                                                                                                     </h3><a href="http://www.youtube.com/user/UIStudentWellness"><img src="{$BaseHref}/themes/imu4/images/youtube.png"
                                                                                                                          width="95px"
                                                                                                                          alt="YouTube" /></a>
-                                                                                                                    <p></p>
+                                                                                                                 </center>
                                                                                                                 </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                        <tbody style="width:49%; float:left; border-left:1px solid #ddd;">
-                                                                                                            <tr>
-                                                                                                                <td colspan="2"
+                                                                                                                </tr>
+                                                                                                                </tbody>
+                                                                                                                </table>
+                                                                                                                </td>
+
+                                                                                                                    </tr>
+                                                                                                                    </tbody>
+                                                                                                                    </table>
+                                                                                                                </td>
+                                                                                     
+                                                                                                                                                                                                                                <td style="font-family: Arial" colspan="2"
                                                                                                                     style="padding: 10px;">
                                                                                                                     <h2 class="h2">
                                                                                                                         Free Wellness Consultations
                                                                                                                     </h2>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                <td valign="top">
+                                                                                                   
                                                                                                                     <p>
                                                                                                                         Get healthy and stay healthy! Free consultations for UI students:
                                                                                                                     </p>
-                                                                                                                    <ul>
-                                                                                                                        <li>Alcohol & Other Drugs
-                                                                                                                        </li>
-                                                                                                                        <li>Fitness
-                                                                                                                        </li>
-                                                                                                                        <li>Nutrition
-                                                                                                                        </li>
-                                                                                                                        <li>Sexual Health
-                                                                                                                        </li>
-                                                                                                                        <li>Stress Management
-                                                                                                                        </li>
-                                                                                                                        <li>Tobacco Cessation
-                                                                                                                        </li>
-                                                                                                                    </ul>Student Health & Wellness has two locations: The CRWC Wellness Services Suite (319-353-2973) and the Westlawn Building (319-335-8394).
-                                                                                                                    <p></p>
+                                                                                                                    
+                                                                                                                    <table cellpadding="2" cellspacing="2" border="0"> 
+																												    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial" >Alcohol & Other Drugs</td>
+																												    </tr>
+																												    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial">Fitness</td>
+																												    </tr>
+																												    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial">Nutrition</td>
+																												    </tr>																																																	    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial">Sexual Health</td>
+																												    </tr>
+																												    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial">Stress Management</td>
+																												    </tr>
+																												    <tr>
+																												        <td valign="top">&bull;</td>
+																												        <td style="font-family: Arial">Tobacco Cessation</td>
+																												    </tr>																												    																												    							   
+																												</table>
+																												 <p>Student Health & Wellness has two locations: The CRWC Wellness Services Suite (319-353-2973) and the Westlawn Building (319-335-8394).</p>
                                                                                                                 </td>
+
                                                                                                             </tr>
                                                                                                         </tbody>
+
                                                                                                     </table>
                                                                                                 </div>
                                                                                             </td>
@@ -758,7 +795,7 @@
                                                                                        style="border: 1px solid #be9c42;">
                                                                                     <tbody>
                                                                                         <tr>
-                                                                                            <td colspan="2"
+                                                                                            <td style="font-family: Arial" colspan="2"
                                                                                                 style="padding: 10px;">
                                                                                                 <h2 class="h2">
                                                                                                     Staff Profile: $FeaturedStaffName
@@ -766,12 +803,12 @@
                                                                                             </td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td valign="top">
+                                                                                            <td style="font-family: Arial" valign="top">
                                                                                                 <p>
                                                                                                     $FeaturedStaffBio
                                                                                                 </p>
                                                                                             </td>
-                                                                                            <td style="padding: 10px;"
+                                                                                            <td style="font-family: Arial" style="padding: 10px;"
                                                                                                 valign="top">
                                                                                                 <% control FeaturedStaffImage.SetWidth(200) %><img src="$AbsoluteURL" /> <% end_control %>
                                                                                             </td>
@@ -796,15 +833,15 @@
                             </table>
                             <div mc:edit="std_footer"
                                  style="background: #231f20; width: 600px;">
-                                <table width="600" bgcolor="#000">
+                                <table width="600" bgcolor="#231F20" style="background-color: #231F20" cellpadding="10">
                                     <tbody>
-                                        <tr>
-                                            <td width="132">
+                                        <tr bgcolor="#231F20">
+                                            <td style="font-family: Arial" width="132" bgcolor="#231F20" >
                                                 <a href="http://studenthealth.uiowa.edu/"><img src="{$BaseHref}/themes/imu4/images/studenthealth_footer_logo.png"
                                                      alt="University of Iowa Student Health" /></a>
                                             </td>
-                                            <td width="300"></td>
-                                            <td width="168">
+                                            <td style="font-family: Arial" width="300" bgcolor="#231F20" ></td>
+                                            <td style="font-family: Arial" width="168" bgcolor="#231F20" >
                                                 <p style="color: white; font-size: 10px; font-family: Arial;">
                                                     For Appointment Information Call 319-335-8394
                                                     <br />
