@@ -776,7 +776,7 @@
 																												        <td style="font-family: Arial">Tobacco Cessation</td>
 																												    </tr>																												    																												    							   
 																												</table>
-																												 <p>Student Health & Wellness has two locations: The CRWC Wellness Services Suite (319-353-2973) and the Westlawn Building (319-335-8394).</p>
+																												 <p>Wellness appointments are available at two locations: The CRWC Wellness Services Suite (319-353-2973) and the Westlawn Building (319-335-8394).</p>
                                                                                                                 </td>
 
                                                                                                             </tr>
