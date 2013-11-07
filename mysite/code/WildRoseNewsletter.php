@@ -4,7 +4,7 @@
  */
 class WildRoseNewsletter extends Page {
 
-   static $db = array(
+   private static $db = array(
    
     'NewsletterDate' => 'Text',
 	
@@ -12,7 +12,7 @@ class WildRoseNewsletter extends Page {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
   
 	 
 	  
@@ -28,17 +28,27 @@ function getCMSFields() {
 
 		
 		// remove a field from a tab
-		$fields->removeFieldFromTab('Root.Content', 'Content');
-		$fields->addFieldToTab('Root.Content.Main', new TextField('NewsletterDate', 'Date range of newsletter here'));	return $fields;
+		$fields->removeFieldFromTab('Root', 'Content');
+		$fields->addFieldToTab('Root.Main', new TextField('NewsletterDate', 'Date range of newsletter here'));	return $fields;
 	
    }}
 
 class WildRoseNewsletter_Controller extends Page_Controller {
 
+private static $allowed_actions = array(
+	'sidebar', 
+    'books',
+    'comingSoonLink'
+    );
+
+
+
 function init() {
 	parent::init();
 	Requirements::themedCSS("WildRoseNewsletter");
 }
+
+     
 
 	
 function sidebar(){

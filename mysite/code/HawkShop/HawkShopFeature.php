@@ -3,11 +3,11 @@
  * Defines the HomePage page type
  */
 class HawkShopFeature extends Page {
-  static $db = array(
+  private static $db = array(
 	'Description' => 'Text',
 	'URL' => 'Text'
   );
-  static $has_one = array(
+  private static $has_one = array(
 	'ItemImage' => 'SizedItemImage'
   );
   
@@ -15,9 +15,9 @@ class HawkShopFeature extends Page {
 	$fields = parent::getCMSFields();
 	$fields->removeFieldFromTab('Root.Content', 'Content');
 	$fields->removeFieldFromTab('Root.Content', 'MenuTitle');
-	$fields->addFieldToTab('Root.Content.Main', new TextField('URL', 'URL'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Description', 'A short description to display.'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('ItemImage', 'Image 160x10 pixels', null, null, null, $this->ClassName));
+	$fields->addFieldToTab('Root.Main', new TextField('URL', 'URL'));
+	$fields->addFieldToTab('Root.Main', new TextField('Description', 'A short description to display.'));
+	$fields->addFieldToTab('Root.Main', new ImageField('ItemImage', 'Image 160x10 pixels', null, null, null, $this->ClassName));
 	return $fields;
   }
 }

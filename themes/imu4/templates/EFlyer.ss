@@ -31,7 +31,7 @@ img {
   <tr>
     <td align="center">
     <% if ImageURL %><a href="$ImageURL"><% end_if %>
-    <img src="$BaseHref$MainImage.URL" width="500" height="636" alt="$Content.NoHTML" border=0 />
+    <img src="$MainImage.AbsoluteURL" width="500" height="636" alt="$Content.NoHTML" border=0 />
     <% if ImageURL %></a><% end_if %>
     
     </td>

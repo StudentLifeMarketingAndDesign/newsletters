@@ -4,7 +4,7 @@
  */
 class WildRoseSideBarItem extends Page {
 
-	static $defaults = array(
+	private static $defaults = array(
 							 
 		'BackgroundColor' => 'Brown'
 	
@@ -12,14 +12,14 @@ class WildRoseSideBarItem extends Page {
 	
 	
 
-   static $db = array(
+   private static $db = array(
    
 	'BackgroundColor' => 'Text',
 
    );
    
    
-   static $has_one = array(
+   private static $has_one = array(
 		"Image" => "Image"
    
    
@@ -30,19 +30,19 @@ function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
 	
-		$fields->removeFieldFromTab('Root.Content.Main','TitleImage');
-		$fields->removeFieldFromTab('Root.Content.Main','IncludePageNameInContent');
-		$fields->removeFieldFromTab('Root.Content.Main','SubNavTitle');
-		$fields->removeFieldFromTab('Root.Content.Main','customCSS');
-		$fields->removeFieldFromTab('Root.Content.Images','ContentImage');
-	$fields->removeFieldFromTab('Root.Content','Content1');
-	$fields->removeFieldFromTab('Root.Content','Content2');
+		$fields->removeFieldFromTab('Root.Main','TitleImage');
+		$fields->removeFieldFromTab('Root.Main','IncludePageNameInContent');
+		$fields->removeFieldFromTab('Root.Main','SubNavTitle');
+		$fields->removeFieldFromTab('Root.Main','customCSS');
+		$fields->removeFieldFromTab('Root.Images','ContentImage');
+	$fields->removeFieldFromTab('Root','Content1');
+	$fields->removeFieldFromTab('Root','Content2');
 	
 	
 	
 	
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content','Content:'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('Image','Image (100 x 133 pixels)(optional)'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('Content','Content:'));
+	$fields->addFieldToTab('Root.Main', new ImageField('Image','Image (100 x 133 pixels)(optional)'));
 
 
 	
@@ -53,7 +53,7 @@ function getCMSFields() {
 	  'Gray' => 'Gray',
 	);
 	 
-	$fields->addFieldToTab('Root.Content.Main', new DropdownField(
+	$fields->addFieldToTab('Root.Main', new DropdownField(
 	  'BackgroundColor',
 	  'Background Color',
 	  $array

@@ -15,10 +15,10 @@ class HawkShop extends Page {
   function getCMSFields() {
 	$fields = parent::getCMSFields();
 	$fields->removeFieldFromTab('Root.Content', 'Content');
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('LeftAds', 'Left Ads'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('RightAds', 'Right Ads'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('TopURL', 'Top URL'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('TopImage', 'Top Image', null, null, null, $this->ClassName));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('LeftAds', 'Left Ads'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('RightAds', 'Right Ads'));
+	$fields->addFieldToTab('Root.Main', new TextField('TopURL', 'Top URL'));
+	$fields->addFieldToTab('Root.Main', new ImageField('TopImage', 'Top Image', null, null, null, $this->ClassName));
 	return $fields;
   }
 }

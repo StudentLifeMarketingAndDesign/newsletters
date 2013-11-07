@@ -84,17 +84,17 @@
             <tr>
                 <td width="580" border="0">
                     <p align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333;">
-                        Having 
+                        Having
                         trouble viewing this email?
-                        <webversion>View it in your <a style="outline:none;" href="http://news.imu.uiowa.edu/$URLSegment" target="_blank">browser</a></webversion>.
-                        
+                        <webversion>View it in your <a style="outline:none;" href="http://news.imu.uiowa.edu/$URLSegment" target="_blank">browser</a></webversion>
+                        .
                     </p>
                 </td>
             </tr>
             <!--Table Row 2 (masthead) -->
             <tr>
                 <!--<td bgcolor="#000000">-->
-                <td><a href="http://www.uiowafsl.com"><img src="http://news.imu.uiowa.edu/themes/imu4/images/frats-informer.png" width="580" height="112" alt="Fraternity and Sorority Life" border="0" /></a></td>
+                <td><a href="http://www.uiowafsl.com"><img src="http://imu.uiowa.edu/themes/imu4/images/greek/masthead.png" width="580" height="112" alt="Fraternity and Sorority Life" border="0" /></a></td>
             </tr>
             <!--Table Row 3 (photo)-->
             <tr>

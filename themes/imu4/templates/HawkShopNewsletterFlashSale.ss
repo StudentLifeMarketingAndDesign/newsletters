@@ -100,7 +100,7 @@
 						<% end_if %>
 						<tr>
 							<td style="padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
-								<img src="$BaseHref$MainImage.URL" width="600" height="764" border="0" alt="$MainImageAlt" usemap="#Flash" />
+								<img src="$MainImage.AbsoluteURL" width="600" height="764" border="0" alt="$MainImageAlt" usemap="#Flash" />
 								<map name="Flash" id="Flash">
 								  <area shape="rect" coords="0,0,418,764" alt="$MainImageAlt" title="$MainImageAlt" href="{$MainImageURL}&associateid={$AssociateID}?utm_source={$AssociateID}&utm_medium=email" />
 								  <area shape="rect" coords="418,0,600,152" alt="$FlashBox1Title" title="$FlashBox1Title" href="{$FlashBox1Url}&associateid={$AssociateID}?utm_source={$AssociateID}&utm_medium=email" />
@@ -126,7 +126,7 @@
 								<td width="100%" bgcolor="#ffffff">
 									<table width="100%" cellpadding="10" cellspacing="0" border="0" border="0">
 										<tr>
-											<% control ProductsGroup(0) %>
+											<% loop ProductsGroup(0) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
 													<a href="$ItemURL&associateid={$AssociateID}?utm_source={$AssociateID}&utm_medium=email"><img src="$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
@@ -144,12 +144,12 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 
 										<% if ProductsGroup(4) %>
 										<tr>
-											<% control ProductsGroup(4) %>
+											<% loop ProductsGroup(4) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
 													<a href="$ItemURL&associateid={$AssociateID}?utm_source={$AssociateID}&utm_medium=email"><img src="$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
@@ -167,13 +167,13 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 										<% end_if %>
 
 										<% if ProductsGroup(8) %>
 										<tr>
-											<% control ProductsGroup(8) %>
+											<% loop ProductsGroup(8) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
 													<a href="$ItemURL&associateid={$AssociateID}?utm_source={$AssociateID}&utm_medium=email"><img src="$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
@@ -191,7 +191,7 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 										<% end_if %>
 									</table>

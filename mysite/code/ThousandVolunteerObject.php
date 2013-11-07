@@ -3,12 +3,12 @@
  * Defines the Minisite page type
  */
 class ThousandVolunteerObject extends DataObject {   
-	public static $db = array(
+	private static $db = array(
 	'Title' => 'Text',
 	'Date' => 'Text',
 	'Description' => 'HTMLText'
 	);
-	static $has_one = array(
+	private static $has_one = array(
 	'ThousandVolunteers' => 'ThousandNewsletter',
 	'ObjectImage' => 'Image'
 	);

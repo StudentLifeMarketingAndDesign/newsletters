@@ -105,11 +105,11 @@
 						<tr>
 							<td style="padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
 								<% if MainImageURL %>
-						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else_if MainImageURLOther %>
-						   			<a href="{$MainImageURLOther}"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURLOther}"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else %>
-						   			<img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" />
+						   			<img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" />
 						   		<% end_if %>
 							</td>
 						</tr>
@@ -128,9 +128,9 @@
 								<td width="100%" bgcolor="#ffffff">
 									<table width="100%" cellpadding="10" cellspacing="0" border="0" border="0">
 										<tr>
-											<% control ProductsGroup(0) %>
+											<% loop ProductsGroup(0) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
 													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
 														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
@@ -146,12 +146,12 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 
 										<% if ProductsGroup(4) %>
 										<tr>
-											<% control ProductsGroup(4) %>
+											<% loop ProductsGroup(4) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
 													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
@@ -169,13 +169,13 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 										<% end_if %>
 
 										<% if ProductsGroup(8) %>
 										<tr>
-											<% control ProductsGroup(8) %>
+											<% loop ProductsGroup(8) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
 													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
 													<br>
@@ -193,7 +193,7 @@
 														</p>
 													<% end_if %>
 												</td>
-											<% end_control %>
+											<% end_loop %>
 										</tr>
 										<% end_if %>
 									</table>

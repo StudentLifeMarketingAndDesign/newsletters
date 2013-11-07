@@ -4,7 +4,7 @@
  */
 class ScopeNewsletter extends Page {
 
-   static $db = array(
+   private static $db = array(
 	
 	
 	'SidebarMainHeadline' => 'Text',
@@ -15,24 +15,24 @@ class ScopeNewsletter extends Page {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
 						   
 		
 		
 	  
 	  );
    
-   static $allowed_children = array ("ScopeNewsletterFeature");
+   private static $allowed_children = array ("ScopeNewsletterFeature");
 
 
 function getCMSFields() {
 	$fields = parent::getCMSFields();
-	$fields->addFieldToTab("Root.Content.Main", new TextField("SidebarMainHeadline", "Sidebar headline"));
-	$fields->addFieldToTab("Root.Content.Main", new TextField("SidebarEventsHeadline", "Sidebar events headline"));
-	$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField("SidebarContent", "Sidebar content"));
+	$fields->addFieldToTab("Root.Main", new TextField("SidebarMainHeadline", "Sidebar headline"));
+	$fields->addFieldToTab("Root.Main", new TextField("SidebarEventsHeadline", "Sidebar events headline"));
+	$fields->addFieldToTab("Root.Main", new HTMLEditorField("SidebarContent", "Sidebar content"));
 	/* Main Content Fields */
 	
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
+	$fields->removeFieldFromTab('Root.Main', 'Content');
 
 	
 	return $fields;

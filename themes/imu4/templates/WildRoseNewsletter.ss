@@ -279,29 +279,29 @@ h1.picks {
 			   
              <h2 style="font-family: Georgia;font-size: 18px;font-weight: bold;color: #8d654b;margin: 0 0 6px 4px;">In this issue</h2>
 			 <ul>
-			 <% control books %>
+			 <% loop books %>
 			 <li>$Title
 			 $Content</li>
-			 <% end_control %>
+			 <% end_loop %>
 			 <li>Coming Soon</li>
 <li>
 <p>Want to receive notifications about <em>Wild Rose Books</em> Special Events &amp; Promotions?</p>
 <a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=WRBEVENTS&amp;A=1" target="_blank">Click here to subscribe </a></li>
 			 </ul>
 			 	
-               <% control sidebar %>               
+               <% loop sidebar %>               
 			   <a name="$URLSegment"></a> <h2 style="font-family: Georgia;font-size: 18px;font-weight: bold;color: #8d654b;margin: 0 0 6px 4px;">$Title</h2>
                   <table border="0" cellspacing="0" cellpadding="0">
                      <tr>
                         <td class="$BackgroundColor" align="left" cellpadding="10">
                         <div style="text-align: center; padding: 5px">
                         <% if Image %>
-                        		<% control Image %>
-			  					<% control CroppedImage(100,133) %>
+                        		<% loop Image %>
+			  					<% with CroppedImage(100,133) %>
 			  				
 									<img src="$AbsoluteURL" alt="Feature" border="0" >
-			  					<% end_control %>
-								<% end_control %>
+			  					<% end_with %>
+								<% end_loop %>
                         <% end_if %>
                         </div>   
                            $Content
@@ -312,14 +312,14 @@ h1.picks {
       
                   <img src="$BaseHref/$ThemeDir/images/bookstore/small-hr.gif" width="199" height="27" alt="Small Hr">
                   
-                  <% end_control %>
+                  <% end_loop %>
                   
                 
                </td>
                
                <td align="left" valign="top" width="348" class="mainbar">    
                  
-					<% control books %>
+					<% loop books %>
 						<br/ >
 						<br/ >
 						<a name="$URLSegment"></a>
@@ -331,7 +331,7 @@ h1.picks {
 						
 						<img src="$BaseHref/$ThemeDir/images/bookstore/hr.gif" width="348" height="27" alt="Hr">
 						
-					<% control Children  %>              
+					<% loop Children  %>              
 						<% if SPTitle %>
 						 	<h2 style="font-family:Georgia;font-size:18px;font-weight:bold;color:#2679b9;margin: 0px;margin-top:0px;padding:0px;">$SPTitle</h2>
 						<% end_if %>
@@ -345,9 +345,9 @@ h1.picks {
 						<% end_if %></p>
 						 
 						<% if SPImage %>
-							<% control SPImage.SetWidth(100) %>
+							<% with SPImage.SetWidth(100) %>
 								<img src="$BaseHref/$URL" alt="$SPImageAlt" vspace="4" class="inline" align="right">
-							<% end_control %>
+							<% end_with %>
 						<% end_if %> 
 							
 						<% if SPSpecial %>
@@ -355,10 +355,10 @@ h1.picks {
 						<% end_if %>
 						
 						<p style="font-family:Lucida Grande;font-size:11px;">$SPDescription </p>
-					<% end_control %>
+					<% end_loop %>
 						<img src="$BaseHref/$ThemeDir/images/bookstore/hr.gif" width="348" height="27" alt="Hr">
 					 <!-- <a href="#top" class="center" style="font-size: 12px;text-align: center;display: block;color: #999999;padding: 8px 0 12px 0;text-decoration: none;">Back to top^</a><br /> -->
-					 <% end_control %>
+					 <% end_loop %>
 					  <br><p>   
 					  <p>All book reviews are provided by the publisher.</p>
                </td>

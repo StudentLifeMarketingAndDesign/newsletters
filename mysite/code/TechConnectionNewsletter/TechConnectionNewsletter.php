@@ -3,7 +3,7 @@
  * Defines the HomePage page type
  */
 class TechConnectionNewsletter extends Page {
-	static $db = array(
+	private static $db = array(
 	'AssociateID' => 'Text',
 	'MainDate' => 'Text',
 	'MainHeader' => 'Text',
@@ -21,11 +21,11 @@ class TechConnectionNewsletter extends Page {
 	'FeatureURL' => 'Text',
 	'SocialText' => 'Text'
 	);
-	static $has_one = array(
+	private static $has_one = array(
 		'MainImage' => 'Image',
 		'FeatureImage' => 'Image',
 	);
-	static $has_many = array (
+	private static $has_many = array (
 		"Products" => "TCNProduct",
 		"Events" => "TCNEvent"
 	);
@@ -34,46 +34,46 @@ class TechConnectionNewsletter extends Page {
 	$fields = parent::getCMSFields();
 	
 	/* Main Content Fields */
-	$fields->addFieldToTab('Root.Content.Main', new TextField('AssociateID', 'Associate ID techconnection-year-month-date (Example:  techconnection-2012-02-14)'));
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainHeader', 'Main feature heading (Example: "Weekly Special")'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainTitle', 'Feature title'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainPrice', 'Feature price (Example: $33.95)'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainWas', 'Previous cost (Example: was 42.99)'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainURL', 'Feature purchase URL'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('MainText', 'Main feature text'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage', 'Main Feature Image - 330 x 395 pixels'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MiddleHeader', 'Middle Header'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('SocialText', 'Social media blurb'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('LastHeader', 'Final Header'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureHeader1', 'Feature area heading 1'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureHeader2', 'Feature area heading 2'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('FeatureImage', 'Feature area image - 220 x 220 pixels (ex: Employee photo, or contest winner photo)'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('FeatureText', 'Feature text'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureButton', 'Feature button text'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('FeatureURL', 'Feature area URL'));
+	$fields->addFieldToTab('Root.Main', new TextField('AssociateID', 'Associate ID techconnection-year-month-date (Example:  techconnection-2012-02-14)'));
+	$fields->removeFieldFromTab('Root.Main', 'Content');
+	$fields->addFieldToTab('Root.Main', new TextField('MainHeader', 'Main feature heading (Example: "Weekly Special")'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainTitle', 'Feature title'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainPrice', 'Feature price (Example: $33.95)'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainWas', 'Previous cost (Example: was 42.99)'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainURL', 'Feature purchase URL'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('MainText', 'Main feature text'));
+	$fields->addFieldToTab('Root.Main', new UploadField('MainImage', 'Main Feature Image - 330 x 395 pixels'));
+	$fields->addFieldToTab('Root.Main', new TextField('MiddleHeader', 'Middle Header'));
+	$fields->addFieldToTab('Root.Main', new TextField('SocialText', 'Social media blurb'));
+	$fields->addFieldToTab('Root.Main', new TextField('LastHeader', 'Final Header'));
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureHeader1', 'Feature area heading 1'));
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureHeader2', 'Feature area heading 2'));
+	$fields->addFieldToTab('Root.Main', new UploadField('FeatureImage', 'Feature area image - 220 x 220 pixels (ex: Employee photo, or contest winner photo)'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('FeatureText', 'Feature text'));
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureButton', 'Feature button text'));
+	$fields->addFieldToTab('Root.Main', new TextField('FeatureURL', 'Feature area URL'));
 	
-	$fields->addFieldToTab("Root.Content.Products", new DataObjectManager(
-			$this,
+   
+   	$fields->addFieldToTab("Root.Products", new GridField(
 			'TCNProduct',
-			'TCNProduct',
-			array('Title' => 'Title'),
+			null,
+			$this->Products(), 
+			GridFieldConfig_RelationEditor::create(),
+			array('ItemTitle' => 'Title'),
 			'getCMSFields_forPopup'
 	));
 	
-	$fields->addFieldToTab("Root.Content.Events", new DataObjectManager(
-			$this,
+	$fields->addFieldToTab("Root.Products", new GridField(
 			'TCNEvent',
-			'TCNEvent',
-			array('Title' => 'Title'),
+			null,
+			$this->Events(), 
+			GridFieldConfig_RelationEditor::create(),
+			array('ItemTitle' => 'Title'),
 			'getCMSFields_forPopup'
 	));
-	
-    return $fields;
-	}
    
-   
-}
+	return $fields;
+}}
 
 class TechConnectionNewsletter_Controller extends ContentController {
 	function init() {

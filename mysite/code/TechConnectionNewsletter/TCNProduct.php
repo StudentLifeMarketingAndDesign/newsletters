@@ -3,12 +3,12 @@
  * Defines the HomePage page type
  */
 class TCNProduct extends DataObject {
-	static $db = array(
+	private static $db = array(
    		"Title" => "Text",
    		"FeatureURL" => "Text",
    		"Description" => "HTMLText",
 	);
-	static $has_one = array(
+	private static $has_one = array(
 		"Newsletter" => "TechConnectionNewsletter",
 		'Image' => 'Image'
 	);
@@ -26,7 +26,7 @@ class TCNProduct extends DataObject {
 		$fields->push( new TextField('Title','Title of newsletter item.') );
 		$fields->push( new TextField('FeatureURL','URL (if any) for title and image') );
 		$fields->push( new SimpleHTMLEditorField('Description','Details for the newsletter item.') );
-		$fields->push( new ImageField('Image') );
+		$fields->push( new UploadField('Image') );
 		return $fields;
 	}
 }

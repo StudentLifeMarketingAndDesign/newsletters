@@ -3,12 +3,12 @@
  * Defines the HawkShopHome page type
  */
 class HawkShopCatalog extends Page {
-  static $db = array(
+  private static $db = array(
 	//'LeftAds' => 'HTMLText',
 	//'RightAds' => 'HTMLText',
 	//'TopURL' => 'Text'
   );
-  static $has_one = array(
+  private static $has_one = array(
 	'TopImage' => 'Image'
   );
   

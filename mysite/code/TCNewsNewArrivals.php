@@ -4,7 +4,7 @@
  */
 class TCNewsNewArrivals extends Page {
 
-   static $db = array(
+   private static $db = array(
 	
 	'MainTitle' => 'Text',
 	'MainSubTitle2' => 'Text',
@@ -52,7 +52,7 @@ class TCNewsNewArrivals extends Page {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
 						   
 		'MainImage' => 'Image',
 		
@@ -73,12 +73,12 @@ function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
 	/* Main Content Fields */
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage', 'Main Feature Image - 620 x 350 pixels'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainURL', 'Main Image URL'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainTitle', 'Main Title'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainSubTitle2', 'Main Sub Title 2'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('MainText', 'Editor\'s Corner Text'));
+	$fields->removeFieldFromTab('Root.Main', 'Content');
+	$fields->addFieldToTab('Root.Main', new ImageField('MainImage', 'Main Feature Image - 620 x 350 pixels'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainURL', 'Main Image URL'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainTitle', 'Main Title'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainSubTitle2', 'Main Sub Title 2'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('MainText', 'Editor\'s Corner Text'));
 	
 	/* Feature 1 content */
 	$fields->addFieldToTab('Root.Content.Feature1', new ImageField('Feature1Image', 'Feature 1 Image - 150 x 110 pixels'));

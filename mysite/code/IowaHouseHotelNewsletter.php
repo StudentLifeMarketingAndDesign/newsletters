@@ -4,7 +4,7 @@
  */
 class IowaHouseHotelNewsletter extends Page {
 
-   static $db = array(
+   private static $db = array(
 	
 	
 	'PreviewText' => 'Text',
@@ -17,7 +17,7 @@ class IowaHouseHotelNewsletter extends Page {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
 						   
 		'MainImage' => 'Image',
 		'FeatureImage' => 'Image',
@@ -29,17 +29,17 @@ class IowaHouseHotelNewsletter extends Page {
 
 function getCMSFields() {
 	$fields = parent::getCMSFields();
-	$fields->addFieldToTab("Root.Content.Main", new TextField("PreviewText", "Preview Text"));
-	$fields->addFieldToTab("Root.Content.Main", new ImageField("MainImage", "Main Image"));
-	$fields->addFieldToTab("Root.Content.Main", new TextField("MainHeadline", "Main Headline"));
-	$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField("MainContent", "Main Content"));
-	$fields->addFieldToTab("Root.Content.Main", new ImageField("FeatureImage", "Feature Image"));
-	$fields->addFieldToTab("Root.Content.Main", new TextField("ImageCaption", "Image Caption"));
-	$fields->addFieldToTab("Root.Content.Main", new ImageField("AdImage", "Ad Image"));
+	$fields->addFieldToTab("Root.Main", new TextField("PreviewText", "Preview Text"));
+	$fields->addFieldToTab("Root.Main", new ImageField("MainImage", "Main Image"));
+	$fields->addFieldToTab("Root.Main", new TextField("MainHeadline", "Main Headline"));
+	$fields->addFieldToTab("Root.Main", new HTMLEditorField("MainContent", "Main Content"));
+	$fields->addFieldToTab("Root.Main", new ImageField("FeatureImage", "Feature Image"));
+	$fields->addFieldToTab("Root.Main", new TextField("ImageCaption", "Image Caption"));
+	$fields->addFieldToTab("Root.Main", new ImageField("AdImage", "Ad Image"));
 
 	/* Main Content Fields */
 	
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
+	$fields->removeFieldFromTab('Root.Main', 'Content');
 
 	
 	return $fields;

@@ -6,7 +6,7 @@ class ContestPage extends UserDefinedForm {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		#$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content'));
+		#$fields->addFieldToTab('Root.Main', new HTMLEditorField('Content'));
 		return $fields;
 	}
 }

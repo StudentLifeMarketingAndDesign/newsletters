@@ -42,7 +42,7 @@ p{
   <tr>
     <td><table width="620" border="0">
       <tr>
-        <td><a href="{$MainImageURL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" /></a></td>
+        <td><a href="{$MainImageURL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" /></a></td>
       </tr>
     </table></td>
   </tr>
@@ -58,19 +58,19 @@ p{
         <table width="320" border="0">
           <tr>
             <td bgcolor="#CCCCCC">
-            <a href="{$Feature1URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$BaseHref$Feature1Image.URL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0"/></a>
+            <a href="{$Feature1URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$Feature1Image.AbsoluteURL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0"/></a>
             <h1 style="padding:10px; padding-bottom:0px; margin:0px;  font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold;">$Feature1Title</h1>
             <p style="padding:10px; margin:0px; line-height:16px; font-family:Arial, Helvetica, sans-serif; font-size:14px;">$Feature1Text</p></td>
           </tr>
           <tr>
             <td bgcolor="#CCCCCC">
-             <a href="{$Feature2URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$BaseHref$Feature2Image.URL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0"/></a>
+             <a href="{$Feature2URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$Feature2Image.AbsoluteURL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0"/></a>
              <h1 style="padding:10px; padding-bottom:0px; margin:0px;font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold;">$Feature2Title</h1>
             <p style="padding:10px; margin:0px; line-height:16px; font-family:Arial, Helvetica, sans-serif; font-size:12px;">$Feature2Text</p></td>
           </tr>
           <tr>
             <td bgcolor="#CCCCCC">          
-             <a href="{$Feature3URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$BaseHref$Feature3Image.URL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0" /></a>
+             <a href="{$Feature3URL}?utm_source={$AssociateID}&utm_medium=email&associateid={$AssociateID}"><img name="" src="$Feature3Image.AbsoluteURL" width="150" height="110" alt="" style="float:left; margin:10px;" border="0" /></a>
              <h1 style="padding:10px; padding-bottom:0px; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold;">$Feature3Title</h1>
             <p style="padding:10px; line-height:16px; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px;">$Feature3Text</p></td>
           </tr>

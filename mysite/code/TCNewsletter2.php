@@ -4,7 +4,7 @@
  */
 class TCNewsletter2 extends Page {
 
-   static $db = array(
+   private static $db = array(
     'NewsletterDate' => 'Text',
 	'MainFeatureHeadline' => 'Text',
 	'MainFeatureSubHeading' => 'Text',
@@ -14,7 +14,7 @@ class TCNewsletter2 extends Page {
    );
    
    
-   static $has_one = array(
+   private static $has_one = array(
 	'MainFeatureImage' => 'Image',
    );
 
@@ -28,13 +28,13 @@ function getCMSFields() {
 		
 	// remove a field from a tab
 	$fields->removeFieldFromTab('Root.Content', 'Content');
-	$fields->addFieldToTab('Root.Content.Main', new TextField('NewsletterDate', 'Date range of newsletter here'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainFeatureHeadline', 'Main feature headline'));
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('MainFeatureImage', 'Main Image'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainFeatureSubHeading', 'Main feature sub heading'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('MainFeatureUrl', 'Link for the main feature'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('MainFeatureDescription', 'Main feature description'));
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('MainFeatureProducts', 'Main feature products'));
+	$fields->addFieldToTab('Root.Main', new TextField('NewsletterDate', 'Date range of newsletter here'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainFeatureHeadline', 'Main feature headline'));
+	$fields->addFieldToTab('Root.Main', new ImageField('MainFeatureImage', 'Main Image'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainFeatureSubHeading', 'Main feature sub heading'));
+	$fields->addFieldToTab('Root.Main', new TextField('MainFeatureUrl', 'Link for the main feature'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('MainFeatureDescription', 'Main feature description'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('MainFeatureProducts', 'Main feature products'));
 	return $fields;
    }}
 

@@ -96,7 +96,7 @@
 									</h2>
 								</td>
 							</tr>
-							<% control Products %>
+							<% loop Products %>
 							<tr>
 								<td height="220" width="350" bgcolor="#102d40">
 								<% if FeatureURL %>
@@ -123,7 +123,7 @@
 								<% end_if %>
 								</td>
 							</tr>
-							<% end_control %>
+							<% end_loop %>
 							<tr>
 								<td colspan="3" width="600" height="3" align="right">
 									<img width="600" height="3" src="http://news.imu.uiowa.edu/assets/tc-newsletter-new-images/purpleline.jpg" alt="">
@@ -196,20 +196,20 @@
 							<tr>
 								<td style="width:353px;" align="left" valign="top" bgcolor="#102d40" rowspan="2">
 									<ul style="margin: 0;padding: 10px;color: white">
-										<% control Events %>
+										<% loop Events %>
 										<li style="font-weight:normal;font-size:11px;list-style:none;margin: 0;">
 										<div style="color:white; font-size: 15px; font-weight: bold;">$Dates</div>
 										<div style="color:white; font-size: 15px; font-weight: bold; margin: 6px 0px;">$Title</div>
 										$Description
 										</li>
-										<% end_control %>
+										<% end_loop %>
 									</ul>
 								</td>
 								<td align="right"valign="top">
 									<% if FeatureImage %>
-									<% control FeatureImage %>
+									<% loop FeatureImage %>
 									<img src="$SetRatioSize(220,220).AbsoluteURL" style="margin-top: 10px" alt="Featured Image">
-									<% end_control %>
+									<% end_loop %>
 									<% end_if %>
 									<div style="color:#86acc5; text-align: center; padding-left:10px; font-size: 13px;">$FeatureText</div>
 									

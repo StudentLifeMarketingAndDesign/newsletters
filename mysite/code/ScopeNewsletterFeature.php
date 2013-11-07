@@ -4,7 +4,7 @@
  */
 class ScopeNewsletterFeature extends Page {
 
-   static $db = array(
+   private static $db = array(
 	
 	
 
@@ -22,7 +22,7 @@ class ScopeNewsletterFeature extends Page {
    
    
    
-   static $has_one = array(
+   private static $has_one = array(
 						   
 		
 		'Image' => 'Image',
@@ -35,18 +35,18 @@ function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
 	/* Main Content Fields */
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
+	$fields->removeFieldFromTab('Root.Main', 'Content');
 
 	/*  content */
-	$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Image'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Date', 'Date'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('LinkURL', 'Link URL'));
+	$fields->addFieldToTab('Root.Main', new ImageField('Image', 'Image'));
+	$fields->addFieldToTab('Root.Main', new TextField('Date', 'Date'));
+	$fields->addFieldToTab('Root.Main', new TextField('LinkURL', 'Link URL'));
 
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Location', 'Location'));
-	$fields->addFieldToTab('Root.Content.Main', new TextField('Time', 'Time'));
-		$fields->addFieldToTab('Root.Content.Main', new CheckboxField('InSidebar', 'Put feature in sidebar?'));
+	$fields->addFieldToTab('Root.Main', new TextField('Location', 'Location'));
+	$fields->addFieldToTab('Root.Main', new TextField('Time', 'Time'));
+		$fields->addFieldToTab('Root.Main', new CheckboxField('InSidebar', 'Put feature in sidebar?'));
 
-	$fields->addFieldToTab('Root.Content.Main', new HTMLEditorField('Content', 'Text'));
+	$fields->addFieldToTab('Root.Main', new HTMLEditorField('Content', 'Text'));
 	
 	return $fields;
 	

@@ -4,7 +4,7 @@
  */
 class ThousandNewsletter extends Page {
 
-   static $db = array(
+   private static $db = array(
 	
 	'Feature1Title' => 'Text',
 	'Feature1Text' => 'HTMLText',
@@ -13,12 +13,12 @@ class ThousandNewsletter extends Page {
 	'Feature2Title' => 'Text',
 	'Feature2Text' => 'HTMLText'
 	);
-	static $has_one = array(
+	private static $has_one = array(
 		//'MainImage' => 'Image',
 		'Feature1Image' => 'Image',
 		'Feature2Image' => 'Image'
 	);
-	static $has_many = array(
+	private static $has_many = array(
 		'ThousandVolunteers' => 'ThousandVolunteerObject'
 	);
 	
@@ -34,8 +34,8 @@ class ThousandNewsletter extends Page {
 	$fields = parent::getCMSFields();
 	
 	/* Main Content Fields */
-	$fields->removeFieldFromTab('Root.Content.Main', 'Content');
-	//$fields->addFieldToTab('Root.Content.Main', new ImageField('MainImage', 'Main Feature Image - 620 x 350 pixels'));
+	$fields->removeFieldFromTab('Root.Main', 'Content');
+	//$fields->addFieldToTab('Root.Main', new ImageField('MainImage', 'Main Feature Image - 620 x 350 pixels'));
 	
 	/* The Artist */
 	$fields->addFieldToTab('Root.Content.Feature1', new ImageField('Feature1Image', 'Image of the artist (320x214).'));

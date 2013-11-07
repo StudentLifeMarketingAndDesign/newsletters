@@ -3,12 +3,12 @@
  * Defines the Minisite page type
  */
 class EmtObject extends DataObject {
-	public static $db = array(
+	private static $db = array(
 	'Title' => 'Text',
 	'FeatureURL' => 'Text',
 	'Description' => 'HTMLText'
 	);
-	static $has_one = array(
+	private static $has_one = array(
 	'EmtObjectThings' => 'EmtNewsletter',
 	'Photo' => 'Image'//,
 	//'BiggerImage' => 'Image'

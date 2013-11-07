@@ -74,7 +74,7 @@ a:hover{
     <td align="left" style="padding:10px; font-family:Arial, Helvetica, sans-serif;" border="0">
     <h1 style="font-size:24px; margin:0px; color:#CCC;">$MainTitle</h1>
     <h2  style="font-size:13px; margin:0px;  margin-bottom:10px; color:#999999">$MainSubTitle</h2>
-    <center><% if MainURL %><a href="$MainURL"><img src="$BaseHref$MainImage.URL" border="0" /></a><% else %><img src="$BaseHref$MainImage.URL" border="0" /><% end_if %></center>
+    <center><% if MainURL %><a href="$MainURL"><img src="$MainImage.AbsoluteURL" border="0" /></a><% else %><img src="$MainImage.AbsoluteURL" border="0" /><% end_if %></center>
 
 
  <!-- Special Promotion Items-->         
@@ -101,17 +101,17 @@ a:hover{
      <!--Item 1--> 
     <td align="left" valign="top" style="width:206px; float:left; padding-right:10px;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature1Title</h1>
-    <center><% if Feature1URL %><a href="$Feature1URL"><img src="$BaseHref$Feature1Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature1Image.URL" border="0" /><% end_if %></center>
+    <center><% if Feature1URL %><a href="$Feature1URL"><img src="$Feature1Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature1Image.AbsoluteURL" border="0" /><% end_if %></center>
     $Feature1Text</td>
     <!--Item 2-->         
     <td align="left" valign="top" style="width:216px; float:left;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature2Title</h1>
-    <center><% if Feature2URL %><a href="$Feature2URL"><img src="$BaseHref$Feature2Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature2Image.URL" border="0" /><% end_if %></center>
+    <center><% if Feature2URL %><a href="$Feature2URL"><img src="$Feature2Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature2Image.AbsoluteURL" border="0" /><% end_if %></center>
     $Feature2Text</td>
     <!--Item 3-->         
     <td align="left" valign="top" style="width:211px; float:left; margin-left:5px;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature3Title</h1>
-    <center><% if Feature3URL %><a href="$Feature3URL"><img src="$BaseHref$Feature3Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature3Image.URL" border="0" /><% end_if %></center>
+    <center><% if Feature3URL %><a href="$Feature3URL"><img src="$Feature3Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature3Image.AbsoluteURL" border="0" /><% end_if %></center>
     $Feature3Text</td>
     
   </tr>
@@ -121,16 +121,16 @@ a:hover{
      <!--Item 1--> 
     <td align="left" valign="top" style="width:206px; float:left; padding-right:10px;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature4Title</h1>
-    <center><% if Feature4URL %><a href="$Feature4URL"><img src="$BaseHref$Feature4Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature4Image.URL" border="0" /><% end_if %></center>     $Feature4Text </td>
+    <center><% if Feature4URL %><a href="$Feature4URL"><img src="$Feature4Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature4Image.AbsoluteURL" border="0" /><% end_if %></center>     $Feature4Text </td>
     <!--Item 2-->         
     <td align="left" valign="top" style="width:216px; float:left;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature5Title</h1>
-    <center><% if Feature5URL %><a href="$Feature5URL"><img src="$BaseHref$Feature5Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature5Image.URL" border="0" /><% end_if %></center>
+    <center><% if Feature5URL %><a href="$Feature5URL"><img src="$Feature5Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature5Image.AbsoluteURL" border="0" /><% end_if %></center>
     $Feature5Text</td>
     <!--Item 3-->         
     <td align="left" valign="top" style="width:211px; float:left; margin-left:5px;">
     <h1 style="font-size:16px; color:#CCCCCC;">$Feature6Title</h1>
-   <center><% if Feature6URL %><a href="$Feature6URL"><img src="$BaseHref$Feature6Image.URL" border="0" /></a><% else %><img src="$BaseHref$Feature6Image.URL" border="0" /><% end_if %></center>
+   <center><% if Feature6URL %><a href="$Feature6URL"><img src="$Feature6Image.AbsoluteURL" border="0" /></a><% else %><img src="$Feature6Image.AbsoluteURL" border="0" /><% end_if %></center>
     $Feature6Text</td>
   </tr>
   <!--End Second Row-->

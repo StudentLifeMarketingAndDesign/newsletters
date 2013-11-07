@@ -101,11 +101,11 @@
 						<tr>
 							<td style="padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
 								<% if MainImageURL %>
-						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else_if MainImageURLOther %>
-						   			<a href="{$MainImageURLOther}"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURLOther}"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else %>
-						   			<img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" />
+						   			<img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" />
 						   		<% end_if %>
 							</td>
 						</tr>
@@ -121,11 +121,11 @@
 										<tr>
 											<td bgcolor="#ffffff">
 												<% if Feature1URL %>
-													<a href="{$Feature1URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
+													<a href="{$Feature1URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$Feature1Image.AbsoluteURL" alt="$Feature1Alt" border="0" width="600"></a>
 												<% else_if Feature1URLOther %>
-													<a href="{$Feature1URLOther}"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
+													<a href="{$Feature1URLOther}"><img src="$Feature1Image.AbsoluteURL" alt="$Feature1Alt" border="0" width="600"></a>
 												<% else %>
-													<img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600">
+													<img src="$Feature1Image.AbsoluteURL" alt="$Feature1Alt" border="0" width="600">
 												<% end_if %>
 											</td>
 										</tr>
@@ -142,11 +142,11 @@
 							<tr>
 								<td width="100%" bgcolor="#ffffff">
 									<% if Feature2URL %>
-										<a href="{$Feature2URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
+										<a href="{$Feature2URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$Feature2Image.AbsoluteURL" alt="$Feature2Alt" border="0" width="600"></a>
 									<% else_if Feature2URLOther %>
-										<a href="{$Feature2URLOther}"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
+										<a href="{$Feature2URLOther}"><img src="$Feature2Image.AbsoluteURL" alt="$Feature2Alt" border="0" width="600"></a>
 									<% else %>
-										<img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600">
+										<img src="$Feature2Image.AbsoluteURL" alt="$Feature2Alt" border="0" width="600">
 									<% end_if %>
 								</td>
 							</tr>
@@ -160,11 +160,11 @@
 							<tr>
 								<td width="100%" bgcolor="#ffffff">
 									<% if Feature3URL %>
-										<a href="{$Feature3URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
+										<a href="{$Feature3URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$Feature3Image.AbsoluteURL" alt="$Feature3Alt" border="0" width="600"></a>
 									<% else_if Feature3URLOther %>
-										<a href="{$Feature3URLOther}"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
+										<a href="{$Feature3URLOther}"><img src="$Feature3Image.AbsoluteURL" alt="$Feature3Alt" border="0" width="600"></a>
 									<% else %>
-										<img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600">
+										<img src="$Feature3Image.AbsoluteURL" alt="$Feature3Alt" border="0" width="600">
 									<% end_if %>
 								</td>
 							</tr>

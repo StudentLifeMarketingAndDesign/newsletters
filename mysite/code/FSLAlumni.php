@@ -2,7 +2,7 @@
 /**
  * Defines the HomePage page type
  */
-class GreekNewsletter extends Page {
+class FSLAlumni extends Page {
 
    private static $db = array(
 	
@@ -119,7 +119,7 @@ function getCMSFields() {
 	
    }}
 
-class GreekNewsletter_Controller extends ContentController {
+class FSLAlumni_Controller extends ContentController {
 
 function init() {
 	parent::init();

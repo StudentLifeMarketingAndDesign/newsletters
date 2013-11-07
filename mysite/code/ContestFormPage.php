@@ -4,21 +4,21 @@
  */
 class ContestFormPage extends Page {
    
-	public static $db = array(
+	private static $db = array(
 		"Header" => "Text",
 		"SubHeader" => "Text"
 	);
-	static $has_one = array(					 
+	private static $has_one = array(					 
 	);  
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		#$fields->removeFieldFromTab("Root.Content.Main","TitleImage");
+		#$fields->removeFieldFromTab("Root.Main","TitleImage");
 		#$fields->removeFieldFromTab("Root.Content","Content1");
 		#$fields->removeFieldFromTab("Root.Content","Content2");
 		#$fields->removeFieldFromTab("Root.Content","Images");
-		#$fields->addFieldToTab("Root.Content.Main", new TextField('Header'));
-		#$fields->addFieldToTab("Root.Content.Main", new TextField('SubHeader'));
+		#$fields->addFieldToTab("Root.Main", new TextField('Header'));
+		#$fields->addFieldToTab("Root.Main", new TextField('SubHeader'));
 		
 		return $fields;
    }}
@@ -31,7 +31,7 @@ class OrientationPage_Controller extends ContentController {
 		
 	}*/
 	
-	static $allowed_actions = array(
+	private static $allowed_actions = array(
 		'show' => 'CMS_ACCESS_CMSMain',
 		'Form',
 		'SignupAction',

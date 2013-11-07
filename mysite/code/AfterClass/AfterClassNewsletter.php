@@ -3,12 +3,12 @@
  * Defines the HomePage page type
  */
 class AfterClassNewsletter extends Page {
-	static $db = array(
+	private static $db = array(
 	);
-	static $has_one = array(
+	private static $has_one = array(
 		'MainImage' => 'Image',
 	);
-	static $has_many = array (
+	private static $has_many = array (
 	);
 	
 	function getCMSFields() {

@@ -1,6 +1,6 @@
 <?php
 class CatalogRequestPage extends Page {
-	static $db = array(
+	private static $db = array(
 		'Mailto' => 'Varchar(100)',
 		'Subject' => 'Varchar(100)',
 		'Note' => 'Text',

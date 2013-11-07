@@ -3,13 +3,13 @@
  * Defines the HomePage page type
  */
 class FlashSaleFeaturedProducts extends DataObject {
-	static $db = array(
+	private static $db = array(
    		"ItemTitle" => "Text",
    		"ItemURL" => "Text",
    		"ItemPrice" => "Text",
    		"ItemSalePrice" => "Text",
 	);
-	static $has_one = array(
+	private static $has_one = array(
 		"Newsletter" => "HawkShopNewsletterFlashSale",
 		'Image' => 'Image'
 	);

@@ -28,8 +28,8 @@ body {
 	</td>
   </tr>
   
-      <!-- control ContentBoxes -->
-      <% control Children %>
+      <!-- loop ContentBoxes -->
+      <% loop Children %>
       <tr>
         <td bgcolor="#ffffdc" style="text-align:center">
 		  <% if BiggerImage %>
@@ -70,11 +70,11 @@ body {
           </table>
           <br /></td>
       </tr>
-      <% end_control %>
-      <!-- end_control ContentBoxes -->
+      <% end_loop %>
+      <!-- end_loop ContentBoxes -->
 	  
 	  
-	  <% control EmtObjectThings %>
+	  <% loop EmtObjectThings %>
       <tr>
         <td bgcolor="#ffffdc" style="text-align:center">
 		  <% if BiggerImage %>
@@ -115,7 +115,7 @@ body {
           </table>
           <br /></td>
       </tr>
-      <% end_control %>
+      <% end_loop %>
 	  
 	  
 	  
