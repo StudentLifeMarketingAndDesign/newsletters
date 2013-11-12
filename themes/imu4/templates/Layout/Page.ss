@@ -5,9 +5,9 @@
 				<h2><a href="{$BaseHref}admin/">Manage newsletters in SilverStripe</a></h2>
 				<h2>Newsletters</h2>
 				<ul>
-				<% control ChildrenOf(newsletters) %>
+				<% loop ChildrenOf(newsletters) %>
 					<li><a href="$Link">$MenuTitle</a></li>
-				<% end_control %>
+				<% end_loop %>
 		
 				</ul>
 				
