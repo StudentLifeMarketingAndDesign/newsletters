@@ -44,35 +44,24 @@
 	</style>
 </head>
 
-<body bgcolor="#000000" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important;background-image: url('http://news.imu.uiowa.edu/assets/TechConnectionFall2012/bokeh.jpg');background-repeat: no-repeat;background-position: top center;background-color:#000000;-webkit-text-size-adjust:none;">
+<body bgcolor="#000000" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important;background-image: url('http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_bokeh.jpg');background-repeat: no-repeat;background-position: top center;background-color:#000000;-webkit-text-size-adjust:none;">
 
-	<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-image: url('http://news.imu.uiowa.edu/assets/TechConnectionFall2012/bokeh.jpg');background-repeat: no-repeat;background-position: top center;background-color:#000000;">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-image: url('http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_bokeh.jpg');background-repeat: no-repeat;background-position: top center;background-color:#000000;">
 		<tr>
 			<td width="100%">
 			<table width="650" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
 				<tr>
-				<td width="15"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/spacer.gif" width="15" height="1" alt=""></td>
+				<td width="15" valign="top"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_spacer_left.jpg" width="15" height="305" alt=""></td>
 				<td width="620">
 				   	<table width="620" cellpadding="0" cellspacing="0" border="0" class="table">
 					   	<tr>
-					   		<td width="620">
-					   			<p style="color:#ffffff;font-size:11px;line-height:23px;font-family:Arial,Helvetica,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">Having trouble viewing this email? View it in your <a href="http://news.imu.uiowa.edu/$URLSegment" target="_blank" style="color: #ffffff;text-decoration: underline;">browser</a>.</p>
+					   		<td width="519">
+					   			<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=452&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #ffffff;"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_tech_header.jpg" width="519" height="92" alt="Tech Connection"></a>
 					   		</td>
-					   	</tr>
-					   	<tr>
-					   		<td width="530" rowspan="2">
-					   			<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=452&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #ffffff;"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/tech_logo.png" width="284" height="72" alt="Tech Connection"></a>
+					   		<td width="101">
+					   			<a href="http://www.facebook.com/UIowaTechConnection" style="color: #fff;"><img src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_facebook.jpg" border="0" alt="Facebook" width="101" height="92"></a>
 					   		</td>
-					   		<td width="90">
-					   			<a href="http://www.facebook.com/UIowaTechConnection" style="color: #fff;"><img src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/facebook.png" border="0" alt="Facebook" width="90" height="30"></a>
-					   		</td>
-					   	</tr>
-					   	<tr>
-					   		<td width="90">
-					   			<a href="https://twitter.com/techconnection" style="color: #fff;"><img src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/twitter.png" border="0" alt="Twitter" width="90" height="29"></a>
-					   		</td>
-					   	</tr>
-					   	
+					   	</tr>					   	
 					</table>
 
 					<table width="620" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
@@ -175,28 +164,20 @@
 					<table width="100%" cellpadding="0" cellspacing="0" border="0">
 						<tr>
 							<td width="100%" bgcolor="#000000">
-								<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-image: url('http://news.imu.uiowa.edu/assets/TechConnectionFall2012/bokeh_footer.jpg');background-repeat: no-repeat;background-position: top center;">
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
 									<tr>
-										<td width="381">
-											<img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
-											<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=452&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #ffffff;"><img src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/tech_logo.png" alt="Tech Connection" border="0" width="284" height="72"></a><br>
-											<p style="color:#ffffff;font-size:11px;font-family:Arial,Helvetica,sans-serif;margin-top:5px;margin-bottom:0;padding-top:0;padding-bottom:0;line-height:13px;">Offering the UI community educational pricing at a convenient location.</p>
-										</td>
-										<td width="239">
-											<p style="color:#ffffff;font-size:12px;font-family:Arial,Helvetica,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;line-height:15px;text-align: right;"><strong>Tech Connection</strong><br>
-										Old Capitol Mall<br>
-										201 S. Clinton St.<br>
-										319-335-3120
-											</p>
+										<td width="620">
+											<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=452&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #ffffff;"><img src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_tech_footer.jpg" alt="Tech Connection" border="0" width="620" height="106"></a><br>
 										</td>
 									</tr>
 								</table>
-								<p style="color:#ffffff;font-size:10px;font-family:Arial,Helvetica,sans-serif;margin-top:5px;margin-bottom:20px;padding-top:0;padding-bottom:0;line-height:13px;"><a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=UNIVERSITY-BOOK-STORE&A=1" style="color: #ffffff;">Unsubscribe</a> from this email list.</p>
+								<p style="color:#ffffff;font-size:10px;font-family:Arial,Helvetica,sans-serif;margin-top:5px;margin-bottom:5px;padding-top:0;padding-bottom:0;line-height:13px;"><a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=HAWK-SHOP-LOCAL&A=1" style="color: #ffffff;">Unsubscribe</a> from this email list.</p>
+                <p style="color:#ffffff;font-size:11px;line-height:23px;font-family:Arial,Helvetica,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">Having trouble viewing this email? View it in your <a href="http://news.imu.uiowa.edu/$URLSegment" target="_blank" style="color: #ffffff;text-decoration: underline;">browser</a>.</p>
 							</td>
 						</tr>
 					</table>     
 				</td>
-				<td width="15"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/spacer.gif" width="15" height="1" alt=""></td>
+				<td width="15" valign="top"><img border="0" src="http://news.imu.uiowa.edu/assets/TechConnectionFall2012/new_spacer_right.jpg" width="15" height="305" alt=""></td>
 				</tr>
 			</table>
 		
