@@ -190,7 +190,7 @@
 										<tr>
 											<% control ProductsGroup(0) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" valign="top" border="0"></a>
 													<br>
 													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
 														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
@@ -213,7 +213,7 @@
 										<tr>
 											<% control ProductsGroup(4) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" valign="top" border="0"></a>
 													<br>
 													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
 														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
@@ -237,7 +237,7 @@
 										<tr>
 											<% control ProductsGroup(8) %>
 												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" valign="top" border="0"></a>
 													<br>
 													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
 														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
