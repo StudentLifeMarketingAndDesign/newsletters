@@ -105,103 +105,16 @@
 						<tr>
 							<td style="padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;">
 								<% if MainImageURL %>
-						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else_if MainImageURLOther %>
-						   			<a href="{$MainImageURLOther}"><img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" /></a>
+						   			<a href="{$MainImageURLOther}"><img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" /></a>
 						   		<% else %>
-						   			<img src="$MainImage.AbsoluteURL" border="0" alt="$MainImageAlt" width="600" />
+						   			<img src="$BaseHref$MainImage.URL" border="0" alt="$MainImageAlt" width="600" />
 						   		<% end_if %>
 							</td>
 						</tr>
 					</table>
 					<br>
-
-					<!-- Featured Products -->
-					<% if ProductsTitle %>
-						<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-							<tr>
-								<td bgcolor="#ffffff" style="padding-top:1px;padding-left: 1px;padding-right:1px;">
-									<h3 style="background-color: #000000;background-image: url(http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/featured_products_home.gif);background-repeat: repeat-x; background-position: left top;color: #ffcc00;font-family: arial, verdana, sans-serif;margin: 0;padding-top: 12px;padding-right: 10px;padding-bottom: 12px;padding-left: 10px;">$ProductsTitle</h3>
-								</td>
-							</tr>
-							<tr>
-								<td width="100%" bgcolor="#ffffff">
-									<table width="100%" cellpadding="10" cellspacing="0" border="0" border="0">
-										<tr>
-											<% loop ProductsGroup(0) %>
-												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
-													<br>
-													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
-														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
-													</h5>
-													<% if ItemSalePrice %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
-															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
-														</p>
-														<% else %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong>$ItemPrice</strong>
-														</p>
-													<% end_if %>
-												</td>
-											<% end_loop %>
-										</tr>
-
-										<% if ProductsGroup(4) %>
-										<tr>
-											<% loop ProductsGroup(4) %>
-												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
-													<br>
-													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
-														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
-													</h5>
-													<% if ItemSalePrice %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
-															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
-														</p>
-														<% else %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong>$ItemPrice</strong>
-														</p>
-													<% end_if %>
-												</td>
-											<% end_loop %>
-										</tr>
-										<% end_if %>
-
-										<% if ProductsGroup(8) %>
-										<tr>
-											<% loop ProductsGroup(8) %>
-												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
-													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
-													<br>
-													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
-														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
-													</h5>
-													<% if ItemSalePrice %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
-															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
-														</p>
-														<% else %>
-														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
-															<strong>$ItemPrice</strong>
-														</p>
-													<% end_if %>
-												</td>
-											<% end_loop %>
-										</tr>
-										<% end_if %>
-									</table>
-								</td>
-							</tr>
-						</table>
-						<br>
-					<% end_if %>
 			
 					<!-- Featured Area 1 -->
 					<% if Feature1Image %>
@@ -261,6 +174,94 @@
 							</tr>
 						</table>
 					<% end_if %>
+
+										<!-- Featured Products -->
+					<% if ProductsTitle %>
+						<br>
+						<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+							<tr>
+								<td bgcolor="#ffffff" style="padding-top:1px;padding-left: 1px;padding-right:1px;">
+									<h3 style="background-color: #000000;background-image: url(http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/featured_products_home.gif);background-repeat: repeat-x; background-position: left top;color: #ffcc00;font-family: arial, verdana, sans-serif;margin: 0;padding-top: 12px;padding-right: 10px;padding-bottom: 12px;padding-left: 10px;">$ProductsTitle</h3>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" bgcolor="#ffffff">
+									<table width="100%" cellpadding="10" cellspacing="0" border="0" border="0">
+										<tr>
+											<% control ProductsGroup(0) %>
+												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<br>
+													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
+														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
+													</h5>
+													<% if ItemSalePrice %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
+															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
+														</p>
+														<% else %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong>$ItemPrice</strong>
+														</p>
+													<% end_if %>
+												</td>
+											<% end_control %>
+										</tr>
+
+										<% if ProductsGroup(4) %>
+										<tr>
+											<% control ProductsGroup(4) %>
+												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<br>
+													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
+														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
+													</h5>
+													<% if ItemSalePrice %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
+															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
+														</p>
+														<% else %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong>$ItemPrice</strong>
+														</p>
+													<% end_if %>
+												</td>
+											<% end_control %>
+										</tr>
+										<% end_if %>
+
+										<% if ProductsGroup(8) %>
+										<tr>
+											<% control ProductsGroup(8) %>
+												<td bgcolor="#ffffff" width="135" style="text-align: center;" valign="top">
+													<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Image.SetWidth(135).URL" alt="$ItemTitle" width="135" height="150" valign="top" border="0"></a>
+													<br>
+													<h5 style="font-size: 13px;font-family: arial, verdana, sans-serif;margin-top: 5px;margin-bottom: 5px;text-align: center;">
+														<a href="$ItemURL&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email" style="color: #0066ee;text-decoration: none;">$ItemTitle</a>
+													</h5>
+													<% if ItemSalePrice %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong style="color: red;">Sale $ItemSalePrice</strong><br>
+															<span style="font-size:11px;">(reg. price $$ItemPrice)</span>
+														</p>
+														<% else %>
+														<p style="font-size: 13px;font-family: arial, verdana, sans-serif;margin: 0;text-align: center;">
+															<strong>$ItemPrice</strong>
+														</p>
+													<% end_if %>
+												</td>
+											<% end_control %>
+										</tr>
+										<% end_if %>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<br>
+					<% end_if %>
 					
 					<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
 					
@@ -279,14 +280,16 @@
 											<p style="color:#ffffff;font-size:11px;font-family:Arial,Helvetica,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;line-height:13px;"><strong>Iowa Hawk Shop</strong><br>
 											Old Capitol Mall<br>
 											201 S. Clinton Street<br>
-											Iowa City, Iowa 52240
+											Iowa City, Iowa 52240<br>
+											319-335-3179
 											</p>
 										</td>
 										<td>
 											<p style="color:#ffffff;font-size:11px;font-family:Arial,Helvetica,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;line-height:13px;"><strong>Outlet Store</strong><br>
 												Iowa Hawk Shop Outlet<br>
 												1225 S. Gilbert Street<br>
-												Iowa City, Iowa 52240
+												Iowa City, Iowa 52240<br>
+												1-800-HAWKSHOP
 											</p>
 										</td>
 									</tr>
