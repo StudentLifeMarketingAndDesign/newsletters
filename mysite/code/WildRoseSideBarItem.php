@@ -42,7 +42,7 @@ function getCMSFields() {
 	
 	
 	$fields->addFieldToTab('Root.Main', new HTMLEditorField('Content','Content:'));
-	$fields->addFieldToTab('Root.Main', new ImageField('Image','Image (100 x 133 pixels)(optional)'));
+	$fields->addFieldToTab('Root.Main', new UploadField('Image','Image (100 x 133 pixels)(optional)'));
 
 
 	
