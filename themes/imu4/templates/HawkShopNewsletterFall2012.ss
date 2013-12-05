@@ -115,69 +115,9 @@
 						</tr>
 					</table>
 					<br>
-			
-					<!-- Featured Area 1 -->
-					<% if Feature1Image %>
-						<table width="100%" cellpadding="0" cellspacing="0" border="0">
-							<tr>
-								<td width="100%" bgcolor="#ffffff">
-									<table width="100%" cellpadding="0" cellspacing="10" border="0">
-										<tr>
-											<td bgcolor="#ffffff">
-												<% if Feature1URL %>
-													<a href="{$Feature1URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
-												<% else_if Feature1URLOther %>
-													<a href="{$Feature1URLOther}"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
-												<% else %>
-													<img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600">
-												<% end_if %>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					<% end_if %>
-					
-					<!-- Featured Area 2 -->
-					<% if Feature2Image %>
-						<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
-						<table width="100%" cellpadding="0" cellspacing="10" border="0" bgcolor="#ffffff">
-							<tr>
-								<td width="100%" bgcolor="#ffffff">
-									<% if Feature2URL %>
-										<a href="{$Feature2URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
-									<% else_if Feature2URLOther %>
-										<a href="{$Feature2URLOther}"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
-									<% else %>
-										<img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600">
-									<% end_if %>
-								</td>
-							</tr>
-						</table> 
-					<% end_if %>
-					
-					<!-- Featured Area 3 -->
-					<% if Feature3Image %>
-						<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
-						<table width="100%" cellpadding="0" cellspacing="10" border="0" bgcolor="#ffffff">
-							<tr>
-								<td width="100%" bgcolor="#ffffff">
-									<% if Feature3URL %>
-										<a href="{$Feature3URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
-									<% else_if Feature3URLOther %>
-										<a href="{$Feature3URLOther}"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
-									<% else %>
-										<img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600">
-									<% end_if %>
-								</td>
-							</tr>
-						</table>
-					<% end_if %>
 
-										<!-- Featured Products -->
+					<!-- Featured Products -->
 					<% if ProductsTitle %>
-						<br>
 						<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
 							<tr>
 								<td bgcolor="#ffffff" style="padding-top:1px;padding-left: 1px;padding-right:1px;">
@@ -261,6 +201,65 @@
 							</tr>
 						</table>
 						<br>
+					<% end_if %>
+			
+					<!-- Featured Area 1 -->
+					<% if Feature1Image %>
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="100%" bgcolor="#ffffff">
+									<table width="100%" cellpadding="0" cellspacing="10" border="0">
+										<tr>
+											<td bgcolor="#ffffff">
+												<% if Feature1URL %>
+													<a href="{$Feature1URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
+												<% else_if Feature1URLOther %>
+													<a href="{$Feature1URLOther}"><img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600"></a>
+												<% else %>
+													<img src="$BaseHref$Feature1Image.URL" alt="$Feature1Alt" border="0" width="600">
+												<% end_if %>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					<% end_if %>
+					
+					<!-- Featured Area 2 -->
+					<% if Feature2Image %>
+						<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
+						<table width="100%" cellpadding="0" cellspacing="10" border="0" bgcolor="#ffffff">
+							<tr>
+								<td width="100%" bgcolor="#ffffff">
+									<% if Feature2URL %>
+										<a href="{$Feature2URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
+									<% else_if Feature2URLOther %>
+										<a href="{$Feature2URLOther}"><img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600"></a>
+									<% else %>
+										<img src="$BaseHref$Feature2Image.URL" alt="$Feature2Alt" border="0" width="600">
+									<% end_if %>
+								</td>
+							</tr>
+						</table> 
+					<% end_if %>
+					
+					<!-- Featured Area 3 -->
+					<% if Feature3Image %>
+						<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
+						<table width="100%" cellpadding="0" cellspacing="10" border="0" bgcolor="#ffffff">
+							<tr>
+								<td width="100%" bgcolor="#ffffff">
+									<% if Feature3URL %>
+										<a href="{$Feature3URL}&associateid={$AssociateID}?utm_campaign=newsletter&utm_source={$AssociateID}&utm_medium=email"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
+									<% else_if Feature3URLOther %>
+										<a href="{$Feature3URLOther}"><img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600"></a>
+									<% else %>
+										<img src="$BaseHref$Feature3Image.URL" alt="$Feature3Alt" border="0" width="600">
+									<% end_if %>
+								</td>
+							</tr>
+						</table>
 					<% end_if %>
 					
 					<img border="0" src="http://news.imu.uiowa.edu/assets/HawkShopNewsletterFall2012/spacer.gif" width="1" height="15" class="divider" alt=""><br>
