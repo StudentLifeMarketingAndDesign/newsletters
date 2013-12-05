@@ -786,7 +786,7 @@ body.outlook p {
 
                             <p class="lead">$Content</p>
                             <% if ImageURL %><a href="$ImageURL"><% end_if %>
-                              <img src="$MainImage.AbsoluteURL" width="600" height="$MainImage.Height" alt="" border=0 />
+                              <img src="$MainImage.AbsoluteURL" width="600" height="$MainImage.Height" alt="Wild Rose Books" border=0 />
                             <% if ImageURL %></a><% end_if %>
 
                           </td>
