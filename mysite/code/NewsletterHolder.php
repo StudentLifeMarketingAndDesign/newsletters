@@ -5,22 +5,17 @@
 class NewsletterHolder extends Page {
 
    private static $db = array(
-	
-
-					  
+   					  
    );
    
    
    
    private static $has_one = array(
-
-	  
+  
 	  );
 
-
 function getCMSFields() {
-	$fields = parent::getCMSFields();
-	
+	$fields = parent::getCMSFields();	
 	/*$fields->removeFieldFromTab("Root.Main","Content");
 	$fields->addFieldToTab('Root.Main', new HTMLEditorField('Content', 'Main Text', 5	));
 	$fields->addFieldToTab('Root.Main', new HTMLEditorField('FooterText', 'Footer Text', 5	));	
