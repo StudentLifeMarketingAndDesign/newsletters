@@ -110,6 +110,7 @@ table thead th {
     border-collapse: collapse;
     text-align: left;
     width: 100%;
+    border: 1px solid #E7E7E7;
 }
 .datagrid {
     font: normal 12px/150% Arial, Helvetica, sans-serif;
@@ -234,9 +235,7 @@ div.dhx_modal_cover_dv { position: fixed !important }
 }
 
 .breadcrumbs {
-	padding: 5px;
 	margin: 10px 0;
-	background-color: #ebebeb;
 	font-size: 13px;
 }
 
