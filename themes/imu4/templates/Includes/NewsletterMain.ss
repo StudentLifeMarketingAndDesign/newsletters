@@ -1,40 +1,33 @@
-<h2>$Title - Newsletters</h2>
-	<div class="breadcrumbs">$Breadcrumbs</div>
+
+<h2>$Title</h2>
+<hr />
+<% if $Parent %><div class="breadcrumbs">$Breadcrumbs</div><% end_if %>
 	<div id="newsletter-main">
 		<div class="datagrid">
-			<% if NewsletterHolders%>
-			<table id="newsletter-folder">			
-				<thead>
-					<tr>
-						<th>Newsletter Folder Title</th>
-					</tr>
-				</thead>				
-					<tbody>
-						<% loop NewsletterHolders %>
-						<tr>
-							<td><div><img src="/newsletters/themes/imu4/images/generic_folder.png" /><a href="$Link"> $Title </a></div></td>
-						</tr>
-						<% end_loop %>
-					</tbody>					
-			</table>
-		    <% end_if %>
-		    <% if Newsletters %>			
+		    <% if Newsletters || NewsletterHolders %>			
 			<table id="newsletters">
 				<thead>
 					<tr>
-						<th>Newsletter Title</th>
-						<th class="no-sort-no-image">Edit</th>
-						<th>Last Modified</th>
-						<th>Date Created</th>
+						<th colspan="3">Title</th>
+						<th>Modified</th>
+						<th>Created</th>
 					</tr>
 				</thead>				
-					<tfoot><tr><td colspan="4"><div id="paging"><br></div></tr>
-					</tfoot>		
-					<tbody>
+					<tbody>						
+						<% loop NewsletterHolders %>
+						<tr>
+							<td class="icon"><img src="/newsletters/themes/imu4/images/generic_folder.png" /></td>
+							<td class="after-icon"><a href="$Link"> $Title </a></div></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<% end_loop %>
 						<% loop Newsletters %>
 						<tr>
-							<td><a href="$Link" target="_blank">$MenuTitle </a></td>
-							<td><% if CurrentMember %><a href="{$CMSEditLink}" class="edit-link" target="_blank">(edit)</a> <% end_if %></td>
+							<td class="icon"> <img src="/newsletters/themes/imu4/images/generic_paper.png" /></td>
+							<td class="after-icon"><a href="$Link" target="_blank" class="external">$Title </a></td>
+							<td><% if CurrentMember %><a href="{$CMSEditLink}" class="edit-link" target="_blank">Edit</a> <% end_if %></td>
 							<td><span class="display-none">$LastEdited</span>$LastEdited.NiceUS</td>
 							<td><span class="display-none">$Created</span>$Created.NiceUS</td>
 						</tr>	

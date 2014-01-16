@@ -3,14 +3,14 @@
 }
 
 .typography a.edit-link {
-	color: #840012
+	color: white;
 
 }
 
 .typography a {
 	text-decoration: none;
 	text-transform: none;
-	color: #576caa;
+	color: #357DD8;
 }
 
 .typography #heading h1 a {

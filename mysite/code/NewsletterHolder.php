@@ -13,6 +13,7 @@ class NewsletterHolder extends Page {
    private static $has_one = array(
   
 	  );
+	private static $default_child = "NewsletterHolder";
 
 function getCMSFields() {
 	$fields = parent::getCMSFields();	

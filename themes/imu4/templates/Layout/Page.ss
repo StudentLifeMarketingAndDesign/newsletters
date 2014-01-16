@@ -4,13 +4,12 @@
 			<div id="content">
 			
 			<% if CurrentMember %>
-				<h2><a href="{$BaseHref}admin/">Manage newsletters in SilverStripe</a></h2>
 				
 			<% include NewsletterMain %>
 			<% include RecentlyModified %>					
-						
+				
 			<% else %>
-			<h2><a href="{$BaseHref}Security/login">Login to view all newsletters</a></h2>
+			<h2><a href="{$BaseHref}Security/login?BackURL=%2Fnewsletters%2F">Login to view all newsletters</a></h2>
 			<% end_if %>
 				$Form
 			</div>

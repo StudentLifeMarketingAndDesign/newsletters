@@ -1,5 +1,6 @@
 body {
-	background-image: url(http://studentlife.uiowa.edu/themes/doss/images/background.png)
+	background-image: url(../images/background.png);
+	color: #555;
 }
 
 #body-wrapper {
@@ -10,10 +11,11 @@ body {
 	min-height: 600px;
 	-webkit-box-shadow:0px 0px 7px #212121;
 	-moz-box-shadow:0px 0px 7px #212121;
+	padding-bottom: 30px;
 }
 
 #content {
-	padding: 15px 30px;
+	padding: 0 30px;
 	position: relative;
 }
 
@@ -21,57 +23,193 @@ body {
 	list-style-type: square;
 }
 
-#heading a {
-	color: #ffffff;
-	padding: 5px 10px 5px 2.5px;
-	border-right: solid grey 1px;
-	
-}
 
-#heading a:hover {
-	color: silver;
-}
 
 h1 {
 	font-size: 28px;
 	color: white;
-	margin: 0;
+	margin: 15px 0;
 }
 
 h2 {
 	color: #2f2f2f;
 }
 
-#heading {
-	background-color: #4e6682;
-	padding: 30px 30px 10px;
-	border-bottom: 1px solid #333;
+#heading ul {
+	margin: 0;
+	padding: 0;
+}
+#heading ul li {
+	list-style-type:none;
+	float: left;
+	margin-right: 5px;
 }
 
-#recently-mod-container {
-	display:inline-block;
+#heading li.logout-button {
 	float: right;
-	width: 250px;
+}
+
+#heading li.logout-button a {
+	background-color: #824E58;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #295FA6),
+	color-stop(0.07, #824E58)
+);
+background-image: -o-linear-gradient(top, #295FA6 0%, #824E58 7%);
+background-image: -moz-linear-gradient(top, #295FA6 0%, #824E58 7%);
+background-image: -webkit-linear-gradient(top, #295FA6 0%, #824E58 7%);
+background-image: -ms-linear-gradient(top, #295FA6 0%, #824E58 7%);
+background-image: linear-gradient(to top, #295FA6 0%, #824E58 7%);
+}
+#heading li a {
+	color: #ffffff;
+	padding: 5px;
+	background: #2960A6;
+	border-radius: 3px;
+}
+
+#heading a:hover {
+	color: silver;
+}
+#heading {
+	background-color: #357DD8;
+	padding: 4px 30px;
+	border-bottom: 4px solid #2960A6;
+
+}
+
+#heading p {
+	margin: 0;
+	margin-top: 10px;
+}
+
+
+#recently-mod-container {
+	float: right;
+	margin-bottom: 10px;
 }
 
 #recently-mod {
 	display: block;
-	width: 250px;
-	float: right;
+	width: 270px;
+}
+
+#recently-mod .datagrid table tbody td {
+	font-size: 12px;
 }
 
 #newsletter-main {
-	display: inline-block;
-	width: 680px;	
+	float: left;
+	width: 670px;	
 }
 
 #newsletter-main h2 {
 	margin-top: 3px;
 }
 
+table thead th {
+	font-weight: normal;
+}
 
-.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }.datagrid table td, .datagrid table th { padding: 3px 4px;}.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 14px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 2px solid #E1EEF4;font-size: 14px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEf4;} .datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }.datagrid table tfoot  li { display: inline; }.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #00557F; color: #FFFFFF; background: none; background-color:#006699;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important;} 
+.parent-link {
+	font-size: 12px;
+}
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    overflow: hidden;
 
+}
+.datagrid a.external {
+	background-image: url(../images/external_link.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 40%;
+	padding-right: 13px;
+}
+.datagrid tr td{
+	padding: 10px 0;
+}
+
+
+.datagrid tbody tr:nth-child(odd) {
+	background: #FFF
+}
+
+.datagrid thead tr {
+	background: #E7E7E7;
+}
+
+
+
+.datagrid table td,
+.datagrid table th { padding: 6px 4px }
+.datagrid table thead th {
+    font-size: 14px;
+    background: none;
+}
+.datagrid table td.icon {
+	padding-right: 0;
+}
+.datagrid table td.after-icon {
+	padding-left: 5px;
+}
+.datagrid table thead th:first-child { border: none }
+.datagrid table tbody td {
+    font-size: 14px;
+    font-weight: normal;
+}
+.datagrid table tbody .alt td {
+    background: #E1EEf4;
+}
+.datagrid table tbody td:first-child { border-left: none }
+.datagrid table tbody tr:last-child td { border-bottom: none }
+.datagrid table tfoot td div {
+    border-top: 1px solid #006699;
+}
+.datagrid table tfoot td {
+    padding: 0;
+    font-size: 12px;
+}
+.datagrid table tfoot td div { padding: 2px }
+.datagrid table tfoot td ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.datagrid table tfoot  li { display: inline }
+.datagrid table tfoot li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #006699;
+}
+.datagrid table tfoot ul.active,
+.datagrid table tfoot ul a:hover {
+    text-decoration: none;
+    border-color: #00557F;
+    color: #FFFFFF;
+    background: none;
+    background-color: #006699;
+}
+div.dhtmlx_window_active,
+div.dhx_modal_cover_dv { position: fixed !important }
 #newsletters thead th {
 	background-image:url('../images/bg.gif');
 	background-position: right;
@@ -103,5 +241,29 @@ h2 {
 }
 
 .breadcrumbs {
-	padding-bottom: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #ebebeb;
+	font-size: 12px;
+}
+
+.datagrid a.edit-link {
+	background-image: none;
+	background-color: #6C9173;
+	color: white;
+	text-align: center;
+	padding: 1px 5px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.clear {
+	clear: both;
+}
+
+hr {
+	height: 0px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 20px 0;
 }

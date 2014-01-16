@@ -4,11 +4,11 @@
 			<table>
 				<thead>
 					<tr>
-						<th colspan="2">Recently Modified</th>						
+						<th colspan="2">Recently Created</th>						
 					</tr>
 				</thead>
 				<tbody>
-						<% loop RecentNewsletters %>
+						<% loop RecentlyCreatedNewsletters %>
 						<tr>
 							<td><a href="$Link" target="_blank" class="external">$Title.LimitCharacters(30)</a></td>
 

@@ -40,13 +40,17 @@ public function RecentNewsletters() {
 	return Page::get()->exclude("ClassName", 'NewsletterHolder')->sort("LastEdited", "DESC")->limit(10);
 }
 
+public function RecentlyCreatedNewsletters() {	
+	return Page::get()->exclude("ClassName", 'NewsletterHolder')->sort("Created", "DESC")->limit(10);
+}
+
 public function NewsletterHolders() {
 	$holders = NewsletterHolder::get()->filter( array( "ParentID" => $this->ID));
 	return $holders;
 }
 
 public function Newsletters() {
-	$newsletters = Page::get()->filter( array("ParentID" => $this->ID))->exclude("ClassName", 'NewsletterHolder');
+	$newsletters = Page::get()->filter( array("ParentID" => $this->ID))->exclude("ClassName", 'NewsletterHolder')->sort("LastEdited", "DESC");
 	return $newsletters;
 }
 
