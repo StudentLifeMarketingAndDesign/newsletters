@@ -1,5 +1,5 @@
-<div id="recently-mod-container">
-	<div id="recently-mod">
+<div class="recent-container">
+	<div class="recent">
 		<div class="datagrid">
 			<table>
 				<thead>
@@ -20,5 +20,5 @@
 				</tbody>
 			</table>			
 		</div>
-	</div> <!- recently-mod -->
+	</div> <!- recent -->
 	</div>		

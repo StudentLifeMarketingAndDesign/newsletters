@@ -75,17 +75,18 @@ h2 {
 }
 
 
-#recently-mod-container {
+.recent-container {
 	float: right;
 	margin-bottom: 10px;
+	clear: right;
 }
 
-#recently-mod {
+.recent {
 	display: block;
 	width: 270px;
 }
 
-#recently-mod .datagrid table tbody td {
+.recent .datagrid table tbody td {
 	font-size: 12px;
 }
 
@@ -137,7 +138,7 @@ table thead th {
 
 
 .datagrid table td,
-.datagrid table th { padding: 6px 4px }
+.datagrid table th { padding: 6px 8px 6px 4px;}
 .datagrid table thead th {
     font-size: 14px;
     background: none;
@@ -206,6 +207,10 @@ div.dhx_modal_cover_dv { position: fixed !important }
 
 .display-none {
 	display: none;
+}
+
+.header {
+	padding-right: 10px;
 }
 
 .headerSortDown {
