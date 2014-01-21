@@ -2,6 +2,9 @@
 <% include nav %>
 </div>
 <div id="content">
+	<% if $Form %>
+	<h2>Login</h2>
+	<% end_if %>
 	$Form
 </div>
 			

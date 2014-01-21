@@ -11,11 +11,11 @@ body {
 	min-height: 600px;
 	-webkit-box-shadow:0px 0px 7px #212121;
 	-moz-box-shadow:0px 0px 7px #212121;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 #content {
-	padding: 0 30px;
+	padding: 0 20px;
 	position: relative;
 }
 
@@ -64,7 +64,7 @@ h2 {
 }
 #heading {
 	background-color: #357DD8;
-	padding: 4px 30px;
+	padding: 4px 20px;
 	border-bottom: 4px solid #2960A6;
 
 }
@@ -83,7 +83,7 @@ h2 {
 
 .recent {
 	display: block;
-	width: 270px;
+	width: 300px;
 }
 
 .recent .datagrid table tbody td {
@@ -127,11 +127,18 @@ table thead th {
 	padding: 10px 0;
 }
 
+.datagrid tr:hover {
+	background: #CDF4FF;
+	-webkit-transition: all .5s ease-out;
+}
 
 .datagrid tbody tr:nth-child(odd) {
 	background: #FFF
-}
 
+}
+.datagrid tr:nth-child(odd):hover {
+	background: #CDF4FF;
+}
 .datagrid thead tr {
 	background: #E7E7E7;
 }
@@ -161,7 +168,6 @@ table thead th {
 .datagrid table tbody td:first-child { border-left: none }
 .datagrid table tbody tr:last-child td { border-bottom: none }
 .datagrid table tfoot td div {
-    border-top: 1px solid #006699;
 }
 .datagrid table tfoot td {
     padding: 0;

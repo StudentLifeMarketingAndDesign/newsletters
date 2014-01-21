@@ -13,6 +13,9 @@ require_once("conf/ConfigureFromEnv.php");
 i18n::set_locale('en_US');
 SSViewer::set_theme('imu4');
 
+
+FulltextSearchable::enable();
+
 // TinyMCE cleanup on paste
 HtmlEditorConfig::get('cms')->setOption('paste_auto_cleanup_on_paste','true');
 HtmlEditorConfig::get('cms')->setOption('paste_remove_styles','true');
