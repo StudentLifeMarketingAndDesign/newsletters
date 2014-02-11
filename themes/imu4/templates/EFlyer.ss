@@ -846,7 +846,30 @@ body.outlook p {
                   </tr>
                 </table>
                 <% end_if %>
+ 
+                <!-- Featured image 3 -->
+                <% if Feature3Image %>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
                 
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+
+                            <% if Feature3URL %><a href="{$Feature3URL}"><% end_if %>
+                              <img src="$BaseHref$Feature3Image.URL" alt="" border="0" width="600" height="$Feature3Image.Height"></a>
+                            <% if Feature3URL %></a><% end_if %>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                
+                    </td>
+                  </tr>
+                </table>
+                <% end_if %>               
                 
                 <table class="row footer">
                   <tr>

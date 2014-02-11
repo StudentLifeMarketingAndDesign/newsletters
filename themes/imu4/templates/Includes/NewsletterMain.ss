@@ -48,7 +48,7 @@
 	</div><!--newsletter-main-->		
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<script src="/newsletters/themes/imu4/javascript/jquery.tablesorter.min.js"></script>
+<script src="{$ThemeDir}/javascript/jquery.tablesorter.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
  $.tablesorter.defaults.widgets = ['zebra']; 

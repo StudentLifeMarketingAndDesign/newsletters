@@ -10,6 +10,7 @@ class EFlyer extends Page {
 	'ImageURL' => 'Text',
 	'Feature1URL' => 'Text',
 	'Feature2URL' => 'Text',
+	'Feature3URL' => 'Text',
 					  
    );
    
@@ -20,6 +21,7 @@ class EFlyer extends Page {
 		'MainImage' => 'Image',
 		'Feature1Image' => 'Image',
 		'Feature2Image' => 'Image',
+		'Feature3Image' => 'Image',
 	  
 	  );
 
@@ -43,6 +45,9 @@ function getCMSFields() {
 	$fields->addFieldToTab('Root.Feature2', new UploadField('Feature2Image', 'Upload Image'));
 	$fields->addFieldToTab('Root.Feature2', new TextField('Feature2URL', 'Image Link URL (optional)'));
 
+	/* Feature 3 content */
+	$fields->addFieldToTab('Root.Feature3', new UploadField('Feature3Image', 'Upload Image'));
+	$fields->addFieldToTab('Root.Feature3', new TextField('Feature3URL', 'Image Link URL (optional)'));
 	return $fields;
 	
    }}
