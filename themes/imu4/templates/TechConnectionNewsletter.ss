@@ -257,7 +257,7 @@
 						<tr>
 							<td>
 								<p style="font-family: verdana, arial, sans-serif;color: #fff; font-size: 11px;">
-									<a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=UNIVERSITY-BOOK-STORE&A=1" style="color: #fff;">Unsubscribe from this email list.</a><br />
+									<a href="https://list.uiowa.edu/scripts/wa.exe?SUBED1=HAWK-SHOP-LOCAL&A=1" style="color: #fff;">Unsubscribe from this email list.</a><br />
 									IMU Marketing + Design · 286 Iowa Memorial Union · Iowa City, Iowa 52242-1317
 								</p>
 							</td>
