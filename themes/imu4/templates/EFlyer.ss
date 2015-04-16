@@ -10,46 +10,46 @@
 
 /* Client-specific Styles & Reset */
 
-#outlook a { 
-  padding:0; 
-} 
-
-body{ 
-  width:100% !important; 
-  -webkit-text-size-adjust:100%; 
-  -ms-text-size-adjust:100%; 
-  margin:0; 
+#outlook a {
   padding:0;
 }
 
-.ExternalClass { 
-  width:100%;
-} 
-
-.ExternalClass, 
-.ExternalClass p, 
-.ExternalClass span, 
-.ExternalClass font, 
-.ExternalClass td, 
-.ExternalClass div { 
-  line-height: 100%; 
-} 
-
-#backgroundTable { 
-  margin:0; 
-  padding:0; 
-  width:100% !important; 
-  line-height: 100% !important; 
+body{
+  width:100% !important;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
 }
 
-img { 
-  outline:none; 
-  text-decoration:none; 
+.ExternalClass {
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#backgroundTable {
+  margin:0;
+  padding:0;
+  width:100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline:none;
+  text-decoration:none;
   -ms-interpolation-mode: bicubic;
   width: auto;
-  max-width: 100%; 
-  float: left; 
-  clear: both; 
+  max-width: 100%;
+  float: left;
+  clear: both;
   display: block;
 }
 
@@ -58,7 +58,7 @@ center {
   min-width: 600px;
 }
 
-a img { 
+a img {
   border: none;
 }
 
@@ -71,12 +71,12 @@ table {
   border-collapse: collapse;
 }
 
-td { 
+td {
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-  border-collapse: collapse !important; 
+  border-collapse: collapse !important;
 }
 
 table, tr, td {
@@ -86,9 +86,9 @@ table, tr, td {
 }
 
 hr {
-  color: #d9d9d9; 
-  background-color: #d9d9d9; 
-  height: 1px; 
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
   border: none;
 }
 
@@ -105,8 +105,8 @@ table.container {
   text-align: inherit;
 }
 
-table.row { 
-  padding: 0px; 
+table.row {
+  padding: 0px;
   width: 100%;
   position: relative;
 }
@@ -127,7 +127,7 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 10px; 
+  padding: 0px 0px 10px;
 }
 
 table.columns td.sub-columns,
@@ -320,13 +320,13 @@ img.center {
 
 /* Typography */
 
-body, table.body, h1, h2, h3, h4, h5, h6, p { 
+body, table.body, h1, h2, h3, h4, h5, h6, p {
   color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
-  font-weight: normal; 
-  padding:0; 
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  padding:0;
   margin: 0;
-  text-align: left; 
+  text-align: left;
   line-height: 1.3;
 }
 
@@ -342,7 +342,7 @@ h5 {font-size: 24px;}
 h6 {font-size: 20px;}
 body, table.body, p {font-size: 14px;line-height:19px;}
 
-p { 
+p {
   padding-bottom: 10px;
 }
 
@@ -351,48 +351,48 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
+  color: #2ba6cb;
   text-decoration: none;
 }
 
-a:hover { 
+a:hover {
   color: #2795b6 !important;
 }
 
-a:active { 
+a:active {
   color: #2795b6 !important;
 }
 
-a:visited { 
+a:visited {
   color: #2ba6cb !important;
 }
 
-h1 a, 
-h2 a, 
-h3 a, 
-h4 a, 
-h5 a, 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
 h6 a {
   color: #2ba6cb;
 }
 
-h1 a:active, 
-h2 a:active,  
-h3 a:active, 
-h4 a:active, 
-h5 a:active, 
-h6 a:active { 
-  color: #2ba6cb !important; 
-} 
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #2ba6cb !important;
+}
 
-h1 a:visited, 
-h2 a:visited,  
-h3 a:visited, 
-h4 a:visited, 
-h5 a:visited, 
-h6 a:visited { 
-  color: #2ba6cb !important; 
-} 
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #2ba6cb !important;
+}
 
 /* Panels */
 
@@ -507,7 +507,7 @@ table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
 table.large-button td a:visited {
-  color: #ffffff !important; 
+  color: #ffffff !important;
 }
 
 table.secondary td {
@@ -655,7 +655,7 @@ body.outlook p {
 
   </style>
   <style>
-    
+
     table.facebook td {
       background: #3b5998;
       border-color: #2d4473;
@@ -737,19 +737,19 @@ body.outlook p {
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-         
+
           <table class="row header">
             <tr>
               <td class="center" align="center">
                 <center>
-          
-                  <table class="container">
+
+                  <table class="container" width="600">
                     <tr>
                       <td class="wrapper last">
-            
+
                         <table class="twelve columns">
                           <tr>
-                          
+
                             <td class="six sub-columns">
                               <span class="template-label">Wild Rose Books</span>
                             </td>
@@ -757,10 +757,10 @@ body.outlook p {
                               <span class="template-label"><webversion>View in your <a href="http://news.imu.uiowa.edu/$URLSegment" target="_blank">browser</a></webversion></span>
                             </td>
                             <td class="expander"></td>
-                            
+
                           </tr>
                         </table>
-            
+
                       </td>
                     </tr>
                   </table>
@@ -768,18 +768,18 @@ body.outlook p {
                 </center>
               </td>
             </tr>
-          </table> 
+          </table>
           <br>
-          
-          <table class="container">
+
+          <table class="container" width="600">
             <tr>
               <td>
-                
+
                 <!-- content start -->
-                <table class="row">
+                <table class="row" width="600">
                   <tr>
                     <td class="wrapper last">
-                
+
                       <table class="twelve columns">
                         <tr>
                           <td>
@@ -793,7 +793,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-                
+
                     </td>
                   </tr>
                 </table>
@@ -801,10 +801,10 @@ body.outlook p {
 
                 <!-- Featured image 1 -->
                 <% if Feature1Image %>
-                <table class="row">
+                <table class="row" width="600">
                   <tr>
                     <td class="wrapper last">
-                
+
                       <table class="twelve columns">
                         <tr>
                           <td>
@@ -817,7 +817,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-                
+
                     </td>
                   </tr>
                 </table>
@@ -825,10 +825,10 @@ body.outlook p {
 
                 <!-- Featured image 2 -->
                 <% if Feature2Image %>
-                <table class="row">
+                <table class="row" width="600">
                   <tr>
                     <td class="wrapper last">
-                
+
                       <table class="twelve columns">
                         <tr>
                           <td>
@@ -841,18 +841,18 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-                
+
                     </td>
                   </tr>
                 </table>
                 <% end_if %>
- 
+
                 <!-- Featured image 3 -->
                 <% if Feature3Image %>
-                <table class="row">
+                <table class="row" width="600">
                   <tr>
                     <td class="wrapper last">
-                
+
                       <table class="twelve columns">
                         <tr>
                           <td>
@@ -865,16 +865,16 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-                
+
                     </td>
                   </tr>
                 </table>
-                <% end_if %>               
-                
-                <table class="row footer">
+                <% end_if %>
+
+                <table class="row footer" width="600">
                   <tr>
                     <td class="wrapper">
-                            
+
                       <table class="six columns">
                         <tr>
                           <td class="left-text-pad">
@@ -894,7 +894,7 @@ body.outlook p {
                           <td class="last right-text-pad">
                             <p>Phone: 319-384-5151</p>
                             <p>Email: <a href="mailto:ubs-wildrose@uiowa.edu">ubs-wildrose@uiowa.edu</a></p>
-                          </td>          
+                          </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
@@ -902,12 +902,12 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-                
-                
+
+
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
-            
+
                       <table class="twelve columns">
                         <tr>
                           <td align="center">
@@ -918,15 +918,15 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-            
+
                     </td>
                   </tr>
                 </table>
-                
+
                 <!-- container end below -->
               </td>
             </tr>
-          </table> 
+          </table>
 
         </center>
       </td>
